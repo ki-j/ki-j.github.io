@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Solar System</title>
+        <link type="text/css" rel="stylesheet" href="../../styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <main>
+          <!-- side bar -->
+          <div class="sidenav">
+            <img src="../../sex1.png" alt="Me during an observing night at the Observatorio de Roque de los Muchachos in La Palma." style="margin-left: 10%; width: 75%; justify-content: center;"><br>
+            <br>
+            <a href="../../index.html">About</a>
+            <a href="../../projects.html">Projects</a>
+            <a href="../../employment.html">Employment</a>
+            <a href="../../cv.html">CV</a>
+            <a href="../../materials.html">Materials</a>
+            <br>
+            <li><a href="mailto:kiran.jhass@googlemail.com"><i class="fa fa-envelope fa" style="color:#fcc367"></i>&emsp;<b>kiran.jhass@googlemail.com</b></a></li>
+            <li><a><i class="fa fa-mobile fa-lg" style="color:#fcc367"></i>&emsp;<b>07538783747</b></a></li>
+            <li><a href="https://www.linkedin.com/in/kiran-jhass-8267b01ba/"><i class="fa fa-linkedin fa-lg" style="color:#fcc367"></i>&emsp;<b>Kiran Jhass</b></a></li>
+            <li><a href="https://orcid.org/0009-0007-5240-6861"><i style="color:#fcc367"><b>ORCiD</b></i>&emsp;<b>0009-0007-5240-6861</b></a></li>
+          </div>
+          
+          <!-- Page content -->
+          <div class="main">
+            <div class="back-image">
+              <div class="back-text">
+                <h1 style="font-size:50px; color: #fff8e7aa;" id="top">The Solar System</h1>
+              </div>
+            </div>
+
+            <h2>Introduction</h2>
+            <p>
+                Our planet, the Earth, orbits around the Sun once every 365 days. 
+                There are many other bodies which are also bound by the Sun's gravitational pull.
+                Together, these bodies form the Solar System. 
+            </p>
+            <p>
+                The Solar System contains one star, eight planets, 5 dwarf planets (officially), 293 moons (so far), thousands of comets and millions of asteroids.
+                Our Sun orbits the centre of our galaxy - the Milky Way, taking 230 million years to complete one orbit.
+            </p>
+
+            <h2>The Planets</h2>    
+            <p>
+                There are eight planets in the Solar System: <a href="#merc" style="color: #808080;">Mercury</a>, <a href="#ven" style="color: #c18f17;">Venus</a>, <a href="#ert" style="color: #608e10;">Earth</a>, <a href="#mrs" style="color: #c1440e;">Mars</a>, <a href="#jup" style="color: rgb(201, 57, 98);">Jupiter</a>, <a href="#sat" style="color: #3b381c;">Saturn</a>, <a href="#uran" style="color: #2e84ce;">Uranus</a> and <a href="#nep" style="color: #2b378b;">Neptune</a>.
+                The inner four planets are rocky and small, known as the <i>terrestrial planets</i>.
+                Separating Mars and Jupiter is the asteroid belt, a ring of rock and ice. 
+                Sometimes asteroids are sent hurtling towards Earth - known as Near-Earth Asteroids (NEAs).
+                Jupiter and Saturn are the <i>gas giants</i>, which are far more massive than the inner rocky planets.
+                Uranus and Neptune are the outermost planets and are known as the <i>ice giants</i>.
+            </p>
+
+            <p>
+                The word "planet" comes from the ancient Greek plan&#773;et, meaning <i>wanderer</i>.
+                This refers to the fact that ancient astronomers observed that some stars would move across the night sky, changing their positions relative to the "fixed" stars.
+                A modern definition comes from the International Astronomical Union (IAU).
+                This definition states that a planet must:
+                <ol>
+                    <li>Orbit a star (such as the Sun)</li>
+                    <li>Be big enough that its gravity is able to force it into a spherical shape</li>
+                    <li>Be big enough that it is capable of clearing away any other objects in its orbit of a similar size</li>
+                </ol>
+                Note that in this definition Pluto is not a planet, but instead it is a <i>dwarf planet</i>.
+            </p>
+
+            <!-- buttons -->
+            <div>
+                <button id="planetButton" class="planButton"><img id="planetImage" src="mercury.png"></img></button><br>
+                <button id="changePlanet" class="changeButton">CHANGE PLANET</button>
+            </div>
+            <script src="planetButton.js"></script> <!-- script to control the buttons -->
+            <br>
+
+            <!-- create an environment which will contain all of the planets' information, but only display the one which is clicked -->
+            <div class="planetPage" id="planetPage">
+                <h3 id="planetHeader" style="color: #fff8e7;">Choose a planet using the buttons above...</h3>
+                <p id="planetText"></p>
+                <img id="planetSectImage">
+                <p id="planetStats"></p>
+                <p id="planetF1"></p>
+                <p id="planetF2"></p>
+                <p id="planetF3"></p>
+            </div>
+
+            <h2>Missions</h2>
+            <p>
+                All about the missions we have sent through the Solar System.
+            </p>
+
+            <h2>The formation and evolution of the Solar System</h2>
+            <p>
+                Basically the Grand Tack and Nice models of the Solar System migration.
+            </p>
+
+          </div>
+        </main>
+
+        <footer>
+          <nav>
+            <ul>
+              <li><i class="fa fa-envelope fa" style="color:#fcc367"></i>&emsp;<b>kiran.jhass@googlemail.com</b></li>
+              <li><i class="fa fa-mobile fa-lg" style="color:#fcc367"></i>&emsp;<b>07538783747</b></li>
+              <li><i class="fa fa-linkedin fa-lg" style="color:#fcc367"></i>&emsp;<b>Kiran Jhass</b></li>
+              <li><i style="color:#fcc367"><b>ORCiD</b></i>&emsp;<b>0009-0007-5240-6861</b></li>
+            </ul>
+          </nav>
+        </footer>
+    </body>
+</html>
