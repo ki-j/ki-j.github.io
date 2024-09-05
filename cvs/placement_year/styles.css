@@ -1,0 +1,483 @@
+body {
+    background-color: #000015;
+      font-family: Arial, sans-serif;
+      color: #000000;
+  }
+  /*
+  h1 {*/
+      /*color: lightblue;*/
+    /*  color: #000000;
+      font-family: Arial, sans-serif;
+    }*/
+  
+  h2 {
+    color: #202020;
+  }
+  
+  nav ul {
+      background-color: #151525;
+      /*border-style: solid;
+      border-color: #000000;
+      border-width: 2px;*/
+      padding: 0.5em;
+      border-radius: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+      nav ul li {
+          list-style-type: none;
+          margin-right: 0.5em;
+          margin-left: 0.5em;
+          color: #FFF8E7;
+          text-align: center;
+      }
+      nav ul li a {
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+      color: #000000;
+    }
+    
+  figure {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .card {
+    background-color:#151525;
+    border: 2px solid #151525;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card:hover {
+    background-color: #004040;
+    border-color: #004040;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    transition: all 0.1s ease-out;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .cvNotes {
+    background-color: #FCA31150;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 7%;
+  }
+  
+  .darkerBackground {
+    background-color: #000015;
+  }
+
+  .hisAsNotes {
+    background-color: #15152533;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right:5%;
+  }
+
+  .polishNotes {
+    background-color: #dc143c33;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5%;
+  }
+
+  .WFCNotes {
+    background-color: #ff910033;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5%;
+  }
+
+  .IDSNotes {
+    background-color: #9d0aec33;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5%;
+  }
+
+  .SANotes {
+    background-color: #ff000033;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5%;
+  }
+
+  .spaNotes {
+    background-color:#ad151933;
+    border-radius:10px;
+    padding:10px;
+    margin-right:5%;
+  }
+
+  .telescopeNotes {
+    background-color: #00404033;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5%;
+  }
+  
+  .topDivider {
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #FFF8E7;
+    padding-bottom: 10px;
+  }
+  
+  .stylishBox {
+    background-color: #000015;
+    color: lightgrey;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F5FFFA;
+    border-radius: 10px;
+  }
+  
+  .someSpacing {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .tinyPicture {
+    height: 60px;
+    border-radius: 10px;
+  }
+  
+  .smallPictures {
+    width: 100px;
+  }
+  
+  .mediumPictures {
+    width: 200px;
+  }
+  
+  .sideNoteStyle {
+    border:none;
+    background-color: #151525;
+    margin: right 0%;;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+  
+  .warnOrange {
+    background-color: #ffa500;
+  }
+  
+  .warnRed {
+    background-color: #FF4500;
+    font-size: larger;
+  }
+  
+  .myPageLayoutGrid {
+    display: grid;
+    justify-content: space-between;
+    flex-direction:column;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 1em;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "egArticle egAside1"
+      "egArticle egAside2";
+      "edArticle ."
+  }
+  
+  .myGridArticle {
+    grid-area: egArticle;
+  }
+  
+  .myGridAside1 {
+    grid-area: egAside1;
+  }
+  
+  .myGridAside2 {
+    grid-area: egAside2;
+  }
+  
+  .lightbox {
+    background: rgba(0,0,0,0.8);
+    color:#ffffff;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index: 999;
+  }
+  
+  .lightbox:target {
+    visibility: visible;
+  }
+  
+  #homepage {
+    background: #FFFFFF;
+    color: #000000;
+  }
+
+  #frontPage {
+      /*background: #555580;*/
+      /*background: linear-gradient(#b2cefe, #b2cefe, #baed91, #b2cefe );*/
+      /*background: linear-gradient(#2d2d4c, #202020, #202020, #202020, #4c2f2f);*/
+      /*background: #E5E5E5;*/
+      background: #FFF8E7;
+      min-height: 100vh;
+      max-width: 90%;
+      margin: 0 auto;
+  }
+  
+  #notFrontPage {
+    background: #FFF8E7;
+    /*background: #E5E5E5;*/
+    /*background: linear-gradient(to left, #000000, #333333, #333333);*/
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  #cvPages {
+    background: #FFF8E7;
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  #unclickableMenu {
+    color: #FFF8E7;
+  }
+  
+  #clickableMenu {
+    color: #FCA311;
+  }
+  
+  #clickableMenu:hover {
+    color: #538093;
+  }
+
+  #courseNotesLinks {
+    color: #004040;
+    text-decoration: none;
+    font: bolder;
+  }
+
+  #courseNotesLinks:hover {
+    color: #000000;
+  }
+
+  #homeIcon {
+    background-color:#FCA311;
+  }
+
+  #homeIcon:hover {
+    background-color:#000000;
+  }
+
+  #frontPics {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #INT {
+    width: 450px;
+    border-radius: 100%;
+  }
+
+  #night {
+    background:#000000;
+    color:#FCA311;
+  }
+  
+  #palmaMap {
+    border-radius: 30px;
+  }
+  
+  #parksSetup, #notesSetup {
+    border-radius: 10px;
+    height: 130px;
+  }
+  
+  #photoBox {
+    width: 800px;
+    height: 4000px;
+  }
+  
+  #sideProject {
+    list-style-type: none;
+    border-radius: 10px;
+  }
+  
+  #mainText {
+    margin-top: 0;
+    margin-left: 5%;
+    /*font-size: 12px;*/
+    color: #000000;
+  }
+
+  #INTNotesContents {
+    color: #454585;
+    text-decoration: none;
+  }
+
+  #INTNotesContents:hover {
+    color:#000000;
+  }
+
+  #WFCNotesContents {
+    color: #ff9100;
+    text-decoration: none;
+  }
+
+  #WFCNotesContents:hover {
+    color: #000000;
+  }
+
+  #IDSNotesContents {
+    color: #9d0aec;
+    text-decoration: none;
+  }
+
+  #IDSNotesContents:hover {
+    color:#000000;
+  }
+
+  #SANotesContents {
+    color: #cc0000;
+    text-decoration:none;
+  }
+
+  #SANotesContents:hover {
+    color:black;
+  }
+
+  #spaNotesContents {
+    text-decoration: none;
+  }
+
+  #spaNotesContents:hover {
+    color:#000000;
+  }
+
+  #spanishContents {
+    color:#ff0000;
+    text-decoration:none;
+  }
+
+  #spanishContents:hover {
+    color:#000000;
+  }
+  
+  @keyframes rollOver {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .niceLinks {
+    text-decoration: none;
+    color: #FFF8E7;
+  }
+  .niceLinks:hover {
+    color: #FCA311;
+  }
+  
+  .absPos {
+    position: absolute;
+  }
+  
+  .relPos {
+    position: relative;
+  }
+
+  .parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+
+  .child {
+    border: 1px solid #202020;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    z-index: -1;
+  }
+
+  .termText {
+    color: #000000;
+    z-index: 1;
+  }
+  
+  @media all and (min-width: 1000px) {
+  /**************************************
+    nav ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  **************************************/  
+    .myPageLayoutGrid {
+      grid-template-columns: 2fr 1fr;
+      "egArticle egAside1"
+      "egArticle egAside2";
+    }
+  }
+  
+  @media all and (min-width: 1600px) {
+  /***************************************
+    nav ul {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  ***************************************/  
+    .myPageLayoutGrid {
+      grid-template-columns: 2fr 1fr;
+      "egArticle egAside1"
+      "egArticle egAside2";
+    }
+  }
+  
+  /**********************************
+  This section is for styling tables
+  ***********************************/
+  table, th, td {
+    border: 1px solid HoneyDew;
+    border-collapse: collapse;
+  }
+  tr {
+    background-color: #dddddd;
+  }
+  th, td {
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+  }
+  th {
+    color: #000000;
+  }
+  td {
+    color: #000000;
+  }
+  /********************************/

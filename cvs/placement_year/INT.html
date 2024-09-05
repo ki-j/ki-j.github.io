@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+	<html style="background-image: url('star-background.jpg');">
+		<title>INT Notes</title>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .btn {
+      background-color: #FCA311;
+      border: none;
+      color: #FCA311;
+      padding: 12px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: #000000;
+    }
+    </style>
+	</head>
+
+	<body id="notFrontPage">
+	  <header>
+	    <nav>
+  	    <ul>
+		  <li><a href="../../home.html"><i style="font-size:20px; color:#538093" class="fa fa-home"></i></a></li>
+          <li><a href="../../index.html" id="clickableMenu">Home</a></li>
+          <li><a href="../foundation_year/foundation-year.html" id="clickableMenu">Foundation Year</a></li>
+          <li><a href="../first_year/first-year.html" id="clickableMenu">First Year</a></li>
+          <li><a href="../second_year/second-year.html" id="clickableMenu">Second Year</a></li>
+          <li><a href="../third_year/third-year.html" id="clickableMenu">Third Year</a></li>
+          <li><a href="../placement_year/placement-year.html" id="clickableMenu">Placement Year</a></li>
+          <li><a href="../fourth_year/fourth-year.html" id="clickableMenu">Fourth Year</a></li>
+        </ul>
+	    </nav>
+
+      <center><h1>Using the INT and its instruments</h1></center>
+	  </header>
+	  
+	  <main id="mainText">
+        <section>
+          <!-- <h1>USING the INT and its instruments</h1> -->
+        </section>
+          <ul style="display:flex; flex-direction:row; justify-content:space-around; list-style: none; margin-left:0; margin-right: 7%; text-align: center;">
+            <li style="background-color:#15152533; padding:10px; font-size: large; border-radius:10px; border-color:#151525;"><b><a href="#before_starting" id="INTNotesContents">Before Starting</a></b></li>
+            <li style="background-color:#ff000033; padding:10px; font-size: large; border-radius:10px; border-color:#dd0000;"><b><a href="#SA_notes" id="SANotesContents">Support Astronomer Responsibilities</a></b></li>
+            <li style="background-color: #ff910033; padding:10px; font-size: large; border-radius:10px; border-color:#ff9100;"><b><a href="#WFC_notes"  id="WFCNotesContents">The WFC</a></b></li>
+            <li style="background-color: #9d0aec33; padding:10px; font-size: large; border-radius:10px; border-color:#9d0aec;"><b><a href="#IDS_notes" id="IDSNotesContents">The IDS</a></b></li>
+          </ul>
+
+        <div> <!-- some nice pics of the INT to make it nicer to look at -->
+            <img src="INT1.jpg" class="someSpacing" alt="The Isaac Newton Telescope in La Palma" style="width:44%; height:800px; justify-content: space-around;" />
+
+            <img src="meandIDS.jpeg" class="someSpacing" alt="Me and the IDS having fun" style="width:44%; height: 800px; justify-content: space-around;" />
+        </div>
+
+        <section style="background-color: #15152533; border-radius: 10px; padding: 10px; margin-right: 5%;">         
+          <h1>Instrument Setup Notes</h1>
+          <h2 id="before_starting">Before starting</h2>
+          <p>
+            There are several things to do as soon as you enter the telescope. The steps are in both the IDS and WFC operation manuals. Basically:
+            <ol>
+              <li>First, check the <b>operations logbook</b> from the night before. Check for any restrictions from the night before which are still in place. Write the names of <i>all</i> observers.</li>
+              <li>Then turn on the <b>dome lights</b> and raise the blind.</li>
+              <li>Inspect the telescope floor and make sure there is nothing in the way of the telescope such as ladders etc.</li>
+              <li>Clear any <b>emergency overrides</b> by pressing the RESET button on the console.</li>
+              <li>Turn on the <b>oil pump</b> so that the telescope can move in RA. Turn it off again at the end of the night or if not used for an hour (eg. bad weather).</li>
+              <li>Open the <b>observing log</b> in a browser (search "obslog"), remember to save and close is at the end of the night.</li>
+              <li>Open the following tabs in a browser in the data reduction PC:
+                <ul>
+                  <li>ING weather + seeing</li>
+                  <li>Ventusky</li>
+                  <li>ING Webcams</li>
+                  <li>NOT Weather</li>
+                  <li>Operation Manual</li>
+                  <li>Troubleshooter</li>
+                  <li>Fault Database</li>
+                </ul>
+              </li>
+            </ol>
+          </p>
+
+          <h2>Filling the Cryostat</h2>
+          <p>The cryostat needs to be filled every 12 hours for both the WFC and IDS (Red+2 and EEV10). To do this, find a Dewar and check that it is filled to >30%. Then make sure the pressure is between 0 and 2 bar. Move the dewar to the filling point making sure the earthing wire is connected (WFC) or clipped onto the earthing point (IDS). Then place the nozzle into the filling point and wrap the tube around the metal to the side of it. Unscrew fully the nozzle connected to the pipe then half-turn it back so that it does not freeze open. Allow the cryostat to be fully filled (~10 mins) then close the nozzle. Wait 5-10 minutes for the pipe to unfreeze then place it back in the Dewar. Note the time it was filled and your initials in the operations logbook.</p>
+        </section>
+        <p> </p>
+
+        <figure>
+          <img src="control-room2.jpg" alt="An image of the control room in use during an observing run" style="width: 95%; border-radius:10px;" />
+          <figcaption style="text-align:center;">ING student Ross Dobson pretends to be operating the INT from the control room during a D-night.</figcaption>
+        </figure>
+        <p id="SA_notes"> </p>
+
+
+        <!---------------------------------------------------------- SA ------------------------------------------------------------------>
+
+
+        <section class="SANotes"> <!-- SA NOTES -->
+          <h2>Support Astronomer Responsibilities</h2>
+          <p>The SA is responsible for ensuring visitors obtain the best possible data during their run.</p>
+          <p>If the support schedule changes, the SA must hand over their duty properly, by changing the schedule online and informing observers/TOs etc.</p>
+          <p> </p>
+
+          <section class="SANotes">
+            <h3>Before the observing run</h3>
+            <p>The SA should make contact with the PI at least <b>3 weeks</b> before the observing run.
+            <ul>
+              <li>Find out who's coming to observe</li>
+              <li>Check instrument requirements/ observing and calibration plan</li>
+              <li>Initiate the procedure allowing observers to drive ING cars</li>
+            </ul>
+            </p>
+            <p>Ensure the observers proposal is realistic</p>
+            <p>Look out for:
+              <ul>
+                <li>poorly defined configuration, target list or observing plan</li>
+                <li>inadequate calibration</li>
+                <li>targets too faint for direct observations</li>
+                <li>over-optimistic S/N or observing overheads</li>
+                <li>special requirements (elevation, season, timing constraints, unusual filters, polarisation, blind offsets, dithering, differential tracking).</li>
+              </ul>
+            </p>
+            <p>Check that the observers coming out have sufficient enough experience to do the observing, as well as changes on observers during the run (leading to untrained observers).</p>
+            <p>The SA is usually present for the first night of an observers run as a first point of contact but they do not need to be on site for the remaining nights of the run.</p>
+          </section>
+          <p> </p>
+
+          <section class="SANotes">
+            <h3>Setup Activities</h3>
+            <p>The SA goes up the mountain in the morning/early afternoon before the run and must arrange their own food, accomodation and transport.</p>
+            <p>Verify straight away that the instrument and configuration are as scheduled.</p>
+            <p>Ensure that the instrument is properly setup and ready for the night (see below).</p>
+            <p>Carry out quality control tests and send the results where appropriate to the instrument specialist.</p>
+            <p>Never interact with an instrument which is <b>not</b> mounted to the telescope.</p>
+            <p>For visiting instruments, the visitor teams must not touch the detector capstains. Only the SA can do this.</p>
+          </section>
+          <p> </p>
+
+          <section class="SANotes">
+            <h3>Afternoon Training of Observers</h3>
+            <p>Once the SA has set up the instrument, arrange to meet the observers on site (normally in the control room).</p>
+            <p>Go through the afternoon induction checklist.</p>
+            <p>Ensure each observer has filled in the health and safety form.</p>
+            <p>Go throught the observing plan, highlighting any problems/improvements to the plan.</p>
+            <p>Introduce the observer to the interface screens:
+              <ol>
+                <li>instrument control, mimic, command-line interface</li>
+                <li>IRAF and display windows</li>
+                <li>TCS window</li>
+                <li>observing log</li>
+                <li>weather displays</li>
+              </ol>
+            </p>
+            <p>Introduce observers to the procedures and commands required to observe (see below) and refer them to the observing manual.</p>
+            <p>Observers can do the calibrations they require as part of the training (biases, dome flats, arcs...)</p>
+            <p>Tell the observers how to fill out the night report at the end of the night and introduce the fault-reporting system.</p>
+            <p>Advise that windowing, rspeed and binning may all be changed by ops during the day so be sure to check this on the second observing night.</p>
+            <p>Remind visitors of their responsibilities when an override observation is requested by other observing teams (unlikely on INT).</p>
+          </section>
+          <p> </p>
+
+          <section class="SANotes">
+            <h3>During Observing</h3>
+            <p>Guide the observers through calibrations (sky flats, focussing the telescope, observing a standard star, acquiring targets etc.).</p>
+            <p>Remain on duty until around midnight. After this if the observer is fine then you can go to the residencia (but you are still on call).</p>
+          </section>
+          <p> </p>
+
+          <section class="SANotes">
+            <h3>After Observing</h3>
+            <p>After this the SA work is pretty much done. The only possible additional bits of work would include looking into fault-reports from the night or responding to any questions from the observers.</p>
+          </section>
+        </section>
+        <p id="WFC_notes"> </p>
+
+
+        <!-------------------------------------------------------- WFC ------------------------------------------------------------------>
+
+
+        <section class="WFCNotes"> <!-- THE WFC -->
+          <h2>The WFC</h2>
+
+          <img src="WFC.jpg" class="someSpacing" alt="The INT in access park" style="width:95%; justify-content: space-around; border-radius: 10px;" />
+
+          <ul style="list-style: none;">
+            <b>
+            <li><a href="#filters" id="WFCNotesContents">Filters</a></li>
+            <li><a href="#access_park" id="WFCNotesContents">Access Park</a></li>
+            <li><a href="#zeroset" id="WFCNotesContents">Zeroset</a></li>
+            <li><a href="#QC_tests" id="WFCNotesContents">Quality Control Tests</a></li>
+            <li><a href="#dome_flats" id="WFCNotesContents">Dome Flats</a></li>
+            <li><a href="#catalogue" id="WFCNotesContents">Loading the catalogue</a></li>
+            <li><a href="#flats" id="WFCNotesContents">Twilight Sky Flats</a></li>
+            <li><a href="#SS_calib" id="WFCNotesContents">Single-star Calibrate</a></li>
+            <li><a href="#focus_run" id="WFCNotesContents">Focus Run</a></li>
+            <li><a href="#observing" id="WFCNotesContents">Observing!</a></li>
+            </b>
+          </ul>
+
+          <section class="WFCNotes">
+            <h3>A night with the WFC</h3>
+            <p>The following are step-by-step instructions which outline the procedures and tasks to be carried out during a night with the WFC.</p>
+            <h4>In the afternoon...</h4>
+            <ol>
+              <li>Check panels (check things like focus, dome, terminals etc)</li>
+              <li>Revise the observing plan for the night (<b>D-nights</b>)</li>
+              <li>Check the fault reports from the previous day</li>
+              <li>Change the date on the "who goes there?", in IRAF and the observing log</li>
+              <li>Afternoon tests:
+                <ul>
+                  <li>Take a bias (slow and fast) and take a column cut to check the counts</li>
+                  <li>Start the TV mode in the autoguider camera (and then turn it off again after)</li>
+                </ul>
+              </li>
+              <li>Do the <a href="#filters">filter changes</a> and fill the cryostat (the telescope should be in <a href="#access_park">access park</a>).</li>
+              <li>Do the <a href="#zeroset">zeroset</a>. The telescope should be out of <a href="#access_park">access park</a> for this.</li>
+              <li>Do the <a href="#QC_tests">quality control tests</a> (<b>D-nights</b>).</li>
+              <li>Setup for the first target (window, bin, rspeed, filter)</li>
+              <li>Do the calibrations (biases and <a href="#dome_flats">dome flats</a>)</li>
+              <li><a href="#catalogue">Load the catalogue</a> into the TCS</li>
+            </ol>
+
+            <h4>In the evening...</h4>
+            <ol>
+              <li>Take <a href="#flats">twilight flat fields</a></li>
+              <li>Check the setup by <a href="#dithering">dithering</a></li>
+              <li>Do a <a href="#SS_calib">single-star calibrate</a></li>
+              <li>Do a <a href="#focus_run">focus run</a></li>
+              <li>Check the setup one more time</li>
+              <li>Time to <a href="#observing">observe</a>!</li>
+            </ol>
+          </section>
+          <p id="filters"> </p>
+
+          <section class="WFCNotes">
+            <h3>Filters</h3>
+            <p>You can select a filter using the <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> filter {filter}</TT> command. <br>
+              To change a filter, you can use the <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> change {filter}</TT> command.<br>
+              Changing them is simple, just take your filter, open the filter door and remove the current filter, place the new filter in the wheel then close the door. <br>
+              Once this is done, update the filter changes in the <b>filter database</b>.</p>
+            <p style="background-color: #00903033;"><b>Note:</b> A filter change with the WFC is quicker than moving to a new target. If observing the same targets in different filters, observe the target twice.</p>
+            <p style="background-color: #00903033;"><b>Note:</b> REMEMBER TO WEAR GLOVES WHEN CHANGING THE FILTERS!</p>
+
+            <h4>Try it yourself...</h4>
+
+            <script> // SCRIPT FOR FAKE TCS TERMINAL
+              const input_ft = document.getElementById('input_ft'); // create a variable which stores the input
+              const output_ft = document.getElementById('output_ft'); // create a variable which stores the output
+
+              function printInput_ft(){ // create a function which prints the input when called upon
+                output_ft.innerHTML = input_ft.value; // set the value of the output variable equal to that of the input
+              }
+
+              input_ft.addEventListener("keyup", function(event) { // choose what happens when something is typed into the input
+                // Number 13 is the "Enter" key on the keyboard
+                if (event.keyCode === 13) {
+                  // Cancel the default action, if needed
+                  event.preventDefault();
+                  // Trigger the button element with a click
+                  document.getElementById("button_ft").click();
+                }
+              });
+            </script>
+
+            <script> // SCRIPT FOR FAKE ICS TERMINAL
+              const input_fi = document.getElementById('input_fi');
+              const output_fi = document.getElementById('output_fi');
+  
+              function printInput_fi() {
+                output_fi.innerHTML = input_fi.value;
+              }
+  
+              input_fi.addEventListener("keyup", function(event) {
+                  // Number 13 is the "Enter" key on the keyboard
+                  if (event.keyCode === 13) {
+                  // Cancel the default action, if needed
+                  event.preventDefault();
+                  // Trigger the button element with a click
+                  document.getElementById("button_fi").click();
+                  }
+              });
+            </script>
+
+            <div class="parent"> <!-- div to hold both fake terminals -->
+              <div class="child"> <!-- div to hold the TCS -->
+                <p id="output_ft" class="termText"></p>
+                <label><mark style="background-color: #50505033;">USER&gt;</mark>
+                  <input id="input_ft" type="text" placeholder="Type something"/>
+                </label>
+                <button id="button_ft" onclick="printInput_ft(input_ft)">Enter</button>
+              </div>
+
+              <div class="child"> <!-- div to hold the ICS -->
+                <p id="output_fi"></p>
+                <label><mark style="background-color: #ff8dc450;">SYS&gt;</mark>
+                  <input id="input_fi" type="text" placeholder="Type something"/>
+                </label>
+                <button id="button_fi" onclick="printInput_fi(input_fi)">Enter</button>
+              </div>
+            </div>
+            
+            <div> <!-- some nice pics of the INT to make it nicer to look at -->
+              <img src="filter-wheel.jpg" class="someSpacing" alt="The filter wheel on the WFC" style="width:44%; height:400px; justify-content: space-around; border-radius: 10px;" />
+  
+              <img src="filter.jpg" class="someSpacing" alt="A filter used in the WFC" style="width:44%; height: 400px; justify-content: space-around; border-radius: 10px;" />
+            </div>
+
+            </section>
+          <p id="access_park"> </p>
+
+          <section class="WFCNotes">
+          <h3>Access park</h3>
+
+          <img src="access-park.jpg" class="someSpacing" alt="The INT in access park" style="width:95%; justify-content: space-around; border-radius: 10px;" />
+
+          <h4>Moving out</h4>
+          <p>Setting up the WFC is a fairly simple process. The WFC is placed at the prime focus of the telescope, so it is parked in the <i>access park</i> position. To move out of this, engineering mode must be enabled using the <TT>eng</TT> command. Then on the engineering console, turn the override key and hold it turned. 
+            <ul>
+              <li>Press the quick mode "QM" button and then the "DEC[-]" button to move the telescope up and away from the balcony.</li>
+              <li>Move this until the red triangle on the side of the telescope is aligned with the bottom black line marked by a small arrow.</li>
+              <li>Once it is past this point the override key no longer needs to be turned to move the telescope.</li>
+              <li>Switch back to computing mode using the key on the console.</li>
+              <li>You can park the telescope at the zenith using <TT><span style="background-color: #50505033;">USER&gt;</span> park zenith</TT>.</li>
+            </ul>
+          </p>
+
+          <h4>Moving in</h4>
+          <p>To move in to access park, first in the TCS park it in the ap1 position using <TT><span style="background-color: #50505033;">USER&gt;</span> park ap1</TT>.
+          <ul>
+            <li>Wait for the telescope to stop moving then change to engineering mode (<TT><span style="background-color: #50505033;">USER&gt;</span> eng</TT>).</li>
+            <li>Go to the engineering console, hold the override key and press quick motion (QM).</li>
+            <li>increase the declination until the telescope stops moving (an alarm will sound as it gets closer to the ap position).</li>
+          </ul>
+          </p>
+          </section>
+          <p id="zeroset"> </p>
+
+          <section class="WFCNotes">
+          <h3>Zeroset</h3>
+          <p>To zeroset the telescope, first park it in the zenith park position with the command <TT><span style="background-color: #50505033;">USER&gt;</span> park zenith</TT>. Then record an encoder log and tell the telescope you are going to zeroset the HA and dec (you need to zeroset in that order). Once this has been typed, use the HA and DEC buttons to move the telescope past the zenith - which is indicated by the light above the buttons flashing.</p>
+          <ul>
+            <li>Turn on oil pumps</li>
+            <li>Change to SM on the engineering console</li>
+            <li>Find where the point is when the orange light blinks in both declination and HA</li>
+            <li>Go to the TCS and type:
+              <ul>
+                <li><TT><span style="background-color: #50505033;">USER&gt;</span> LOG ENC ON 10</TT></li>
+                <li><TT><span style="background-color: #50505033;">USER&gt;</span> zero ha tar</TT></li>
+                <li><TT><span style="background-color: #50505033;">USER&gt;</span> zero dec tar</TT></li>
+              </ul>
+            </li>
+            <li>Go to the engineering console and move the ha through the zenith so the orange light blinks again, then do the same for the declination</li>
+            <li>The TCS should acknowledge that the zeroset was completed</li>
+            <li>Type <TT><span style="background-color: #50505033;">USER&gt;</span> LOG ENC OFF</TT> into the TCS</li>
+          </ul>
+
+          <img src="eng-rack.jpg" class="someSpacing" alt="The INT in access park" style="width:50%; justify-content: space-around; border-radius: 10px;" />
+
+        </section>
+          <p id="QC_tests"> </p>
+
+          <section class="WFCNotes">
+            <h3>Quality control tests</h3>
+          </section>
+          <p id="dome_flats"> </p>
+
+          <section class="WFCNotes">
+          <h3>Dome Flats</h3>
+          <p>Take dome flats by first parking the telescope in the flat position using the <TT><span style="background-color: #50505033;">USER&gt;</span> park flat</TT> command. Next move the dome to the flat position using <TT>dome 242</TT>.</p>
+          <ul>
+            <li>Park the telescope in the flat position using <TT><span style="background-color: #50505033;">USER&gt;</span> park flat</TT> in the TCS</li>
+            <li>Move the dome to the flat position using <TT><span style="background-color: #50505033;">USER&gt;</span> dome 242</TT></li>
+            <li>Take a glance (if windowing) or ftest (if no windowing) to estimate the exposure time (see the dome flat assistant), the flats should produce 20,000-40,000 counts</li>
+            <li>Test the counts using IRAF with <TT><span style="background-color: #ffff80;">ecl&gt;</span> displ s1[4] 1; imexam</TT> then clicking on the image and pressing <b>m</b> or <b>c</b> to see the counts</li>
+            <li>Once the correct exposure time has been found, run the command <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> multflat {n} {exp}</TT> in the ICS</li>
+            <p style="background-color: #00903033;"><b>Note:</b> The setup should be exactly as requested by the PI for dome flats. Check the filter, rspeed, windowing and binning.</p>
+          </ul>
+          </section>
+          <p id="catalogue"> </p>
+
+          <section class="WFCNotes">
+            <h3>Loading the catalogue into the TCS</h3>
+            <ul>
+              <li>Check which targets are already loaded into the TCS with <TT><span style="background-color: #50505033;">USER&gt;</span> out term</TT></li>
+              <li>Delete any in there <TT><span style="background-color: #50505033;">USER&gt;</span> erase</TT></li>
+              <li>A catalogue should have the name {catalogue_name}.cat and have no capital letters</li>
+              <li>The catalogue should have the format [object] [RA] [dec] [epoch] [!comments]</li>
+              <li>The catalogue can be uploaded from the users laptop (see manual) or from the proposal on the ING website</li>
+              <li>To upload it to the TCS, use <TT><span style="background-color: #50505033;">USER&gt;</span> include {catalogue}</TT></li>
+              <li>You can add or remove objects using <TT><span style="background-color: #50505033;">USER&gt;</span> add/remove</TT></li>
+            </ul>
+          </section>
+          <p id="#flats"> </p>
+
+          <section class="WFCNotes">
+            <h3>Twilight Sky Flats</h3>
+            <p>
+              <ul>
+                <li>If it is okay to open the dome, then flats can be taken with the twilight sky</li>
+                <li>Find a blank field from the blank fields catalogue in the manual. The field should have an RA within 1 hour of the siderial time</li>
+                <li>Include this catalogue in the TCS (<TT><span style="background-color: #50505033;">USER&gt;</span> include newblank38</TT>)</li>
+                <li>Move to the chosen field (<TT><span style="background-color: #50505033;">USER&gt;</span> gocat {field}</TT>)</li>
+                <li>Choose your filter(s), starting with narrowband filters if you have more than one and trying to move from redder to bluer filters</li>
+                <li>Test the filter in the ICS with <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> ftest 2</TT> and use imexam to test the counts (20-40 thousand)</li>
+                <li>When this is okay, take a flat field (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> sky {exp}</TT>). The time should be between 2 and 120s</li>
+                <li>Now offset the flats slightly with <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> offset arc {ra} {dec}</TT> and take another flat with 1.5 times the exposure time (as the sun is setting). Keep doing this according to the picture below</li>
+              </ul>
+              <figure>
+                <img src="flat_spiral.jpg" alt="how to take flats" style="width:40%;"/>
+              </figure>
+            </p>
+          </section>
+          <p id="SS_calib"> </p>
+
+          <section class="WFCNotes">
+            <h3>Single Star Calibrate</h3>
+            <p>This is useful on the first night of the run. Ususlly the default pointing model is fine, but it is good practise to do it anyway.</p>
+            <p>In the ICS:</p>
+            <ul>
+              <li>Set the readout to the centre of the autoguider chip (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> agwin acq pos 1032 512</TT>)</li>
+              <li>Turn on the continuous readout mode (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> autotv on</TT>)</li>
+            </ul>
+            <p>In the autoguider window set a cross on the image using SETUP &rarr; TOGGLE CENTRE CROSS. Then in the TCS:</p>
+            <ul>
+              <li>Send the telescope to a calibration star (<TT><span style="background-color: #50505033;">USER&gt;</span> cal faint</TT>)</li>
+              <li>Close the handset menu (Ctrl-z)</li>
+              <li>Change the telescope pointing to the autoguider centre (<TT><span style="background-color: #50505033;">USER&gt;</span> aper 5</TT>)</li>
+            </ul>
+            <p>If the star is on the cross then you're good, but for those not in dreamland:</p>
+            <ul>
+              <li>Open the HANDSET with the handset button on the keyboard</li>
+              <li>Choose <TT>X_Y</TT> movement and move <b>the cross towards the star</b> with the arrow keys</li>
+            </ul>
+            <p>Once the star is on the cross, close the handset and in the TCS:</p>
+            <ul>
+              <li>Write the new pointing model to file (<TT><span style="background-color: #50505033;">USER&gt;</span> point calib</TT>)</li>
+              <li>Load the new pointing model (<TT><span style="background-color: #50505033;">USER&gt;</span> cal anal zero</TT>)</li>
+              <li>The rms (<TT>sigma</TT>) is usually 0.01, enter <TT>Y</TT> to accept</li>
+              <li>Move back to the centre of chip 4 (<TT><span style="background-color: #50505033;">USER&gt;</span> enter aperture 0 -251 326</TT>)</li>
+            </ul>
+            <p>In the ICS turn off the continuous readout (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> autotv off</TT>)</p>
+          </section>
+          <p id="focus_run"> </p>
+
+          <section class="WFCNotes">
+            <h3>Focus Run</h3>
+            <p>The typical WFC focus is 43.35 and the most recent value is written on the whiteboard.To determine the best focus select a suitable field from the WFC photometric standard fields link in the manual</p>
+            <p>In the ICS:</p>
+            <ul>
+              <li>Go to the chosen field (<TT><span style="background-color: #50505033;">USER&gt;</span> gocat {field}</TT>)</li>
+              <li>Make sure there is no windowing (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> window 4 disable</TT>)</li>
+              <li>Run the focus script (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> focusrun &</TT>)</li>
+              <li><b>Try and do the focus run in the reddest possible filter (sloan r is good)</b></li>
+              <li>A dialogue box will pop up, use the recommended values from the manual</li>
+              <li>Hit run and accept any error messages</li>
+            </ul>
+            <p>Now in IRAF:</p>
+            <ul>
+              <li>Compute the best focus values from the focus run using <TT><span style="background-color: #ffff80;">ecl&gt;</span> wfc_starfocus</TT></li>
+              <li>Identify around 10-12 stars in the image by placing the cursor over a star and pressing <b>m</b></li>
+              <li>Press <b>q</b> once this is done and a graph will appear showing the best focus value</li>
+              <li>Set the focus to this value in the TCS (<TT><span style="background-color: #50505033;">USER&gt;</span> focus {value}</TT>) and write it on the whiteboard</li>
+            </ul>
+
+            <img src="focus-run.jpg" class="someSpacing" alt="The stars in a focus run" style="width:50%; justify-content: space-around; border-radius: 10px;" />
+            
+          </section>
+          <p id="observing"> </p>
+
+          <section class="WFCNotes">
+            <h3>Observing</h3>
+            <h4>Target Acquisition</h4>
+            <p>Finding targets is easy. Simply use the command <TT><span style="background-color: #50505033;">USER&gt;</span> gocat {target}</TT> in the TCS and the telescope will slew to that target and track it.</p>
+            
+            <h4>Guiding</h4>
+            <p>Guiding is also straightforward. If an exposure is longer than 2 minutes, you should guide. In the ICS:</p>
+            <ul>
+              <li>Make sure the autotv is off (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> autotv off</TT>)</li>
+              <li>When the telescope has slewed to a star, stars in the field are listed in the talker which can be seen with <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> more /tmp/gsc.out</TT></li>
+              <li>Pick a good star from this list and use <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> guide on pixel {x} {y}</TT> where x and y are given in the table</li>
+              <li>If there are no stars try <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> guide off</TT> &rarr; <TT>agwin acq pos {x} {y}</TT> &rarr; <TT>field</TT> then try again</li>
+              <li>Some stars should pop up in the acquisition window with numbers (n) next to them</li>
+              <li>To guide on one of these stars, use <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> guide on star {n}</TT> and a green box should surround it</li>
+            </ul>
+            <p>If exposures are short and you don't need to guide just use <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> guide off</TT> in the ICS.</p>
+
+            <img src="autotv.jpg" class="someSpacing" alt="The autoguiding TV" style="width:75%; justify-content: space-around; border-radius: 10px;" />
+
+            <h4>Exposing</h4>
+            <p>Make sure the dome has stopped moving before exposing. It might be useful to take a glance before starting a run just to make sure. If all is well, in the ICS:</p>
+            <ul>
+              <li>Use <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> run {exp}</TT> to take an exposure of your target</li>
+              <li>Use <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> multrun {n} {exp} {"comments"}</TT></li>
+            </ul>
+          </section>
+          <p> </p>
+
+
+          <!-------------------------------------------------------- IDS ---------------------------------------------------------------->
+
+
+        </section>
+        <p id="IDS_notes"> </p>
+
+        <section class="IDSNotes">
+          <h2>The IDS</h2> <!-- THE IDS -->
+          <p>The IDS requires a longer setup than the WFC (about an hour), so this needs to be kept in mind so that everything can be set up before the night falls or visitors arrive.</p>
+          
+          <ul style="list-style: none;"><b>
+            <li><a href="#IDSChecks" id="IDSNotesContents">Checks after an Instrument Change</a></li>
+            <li><a href="#IDSSetup" id="IDSNotesContents">Setup</a>
+              <ul style="list-style: none;">
+                <li><a href="#IDSCryo" id="IDSNotesContents">Cryostat</a></li>
+                <li><a href="#gratings" id="IDSNotesContents">Changing Gratings</a></li>
+                <li><a href="#spectrograph" id="IDSNotesContents">Setting up the Spectrograph</a></li>
+                <li><a href="#autoguider" id="IDSNotesContents">Preparing the Autoguider</a></li>
+                <li><a href="#AG0" id="IDSNotesContents">Setting up the Acquisition Camera</a></li>
+                <li><a href="#QCNights" id="IDSNotesContents">Quality Control Nights (D-nights)</a></li>
+                <li><a href="#IDSZeroset" id="IDSNotesContents">Zeroset and Pointing Model</a></li>
+              </ul>
+            </li></b>
+          </ul>
+
+          <section class="IDSNotes">
+          <h3 id="IDSChecks">Checks after an instrument change</h3>
+          <p>
+            If the IDS instrument has been changed (ie from the WFC or either EEV10 or Red+2) then several checks must be completed before proceeding with the setup after changing the grating. Things to do are:
+            <ul>
+              <li>Move the central wavelength (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> cenwave</TT>)</li>
+              <li>Change the slit-width slightly (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> slitarc {n}</TT>)</li>
+              <li>Start the TV mode in the AG0 camera to see if it is active (then turn it back off)</li>
+              <li>Start the TV mode in the autoguider mode to check it is active (then turn it off)</li>
+              <li>Take a slow and fast bias and check the counts (ideally 20,000 < counts < 40,000), noise and "structure". Compare with the last test results in the IDS parameters list
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> rspeed {slow/fast}</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> bias</TT>)</p>
+                <p>(<TT><span style="background-color: #ffff80;">ids&gt;</span> displ rXXXXXXX[4] 1; imexam</TT>)</p>
+                <p>Click on the image then press "c" to take a column cut</p>
+              </li>
+              <li>Take a flat to check the detector, lamp and mirror are working fine
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> compmirror in</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> complamps {lamp}</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> flat {exp}</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> complamps off</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> compmirror out</TT>)</p>
+              </li>
+              <li>Check if there is dust in the slit. If so, complete a fault report and contact Neil/Lucia</li>
+              <li>Take an arc with each lamp to also check the detectors, mirror, lamps etc
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> compmirror in</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> complamps {lamp}</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> arc {exp}</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> complamps off</TT>)</p>
+                <p>(<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> compmirror out</TT>)</p>
+              </li>
+              <li>Prepare the <a href="#IDS_setup">setup</a> for the night</li>
+              <li>Read capstain micrometers</li>
+              <li>Do CCD quality control tests and send the results to Lucia</li>
+            </ul>
+          </p>
+          </section>
+          <p> </p>
+          <section class="IDSNotes">
+          <h2 id="IDSSetup">Setup</h2>
+          <section class="IDSNotes">
+          <h3 id="IDSCryo">Cryostat</h3>
+          <p>
+            Make sure the arc lines are not very wide before filling the cryostat. Contact someone if this is the case. Remember to earth the dewar before anything else.
+          </p>
+          </section>
+
+          <p> </p>
+
+          <section class="IDSNotes">
+          <h3 id="gratings">Changing Gratings</h3>
+          <p>
+            Grating changes are fairly similar to filter changes in the WFC, except there are a few extra steps. As in the WFC you use the <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> change</TT> command in the pink window to change filters, you use <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> change_IDS</TT> to change gratings. This pops up a window to change the gratings. Click <i>access grating port</i> then <i>Yes</i>. An error then pops up which can be ignored.
+          </p>
+          <p>
+            Take both the new grating and the old grating boxes over to the grating port on the telescope (it may be useful to change the orientation slightly to help with accessing it). Remove the old grating by removing the three screws and carefully taking the grating out and putting it straight into its box. Mount the new grating in position, which is indicated by the labels on it. Fix the screws in place and close the grating door. Return the old grating to the cupboard and place the empty box on the table next to it, so it is easy to find when the grating needs to be removed.
+          </p>
+          <p>
+            In the control room, select the grating you have just changed then click <i>save changes</i> and <i>exit</i>. Open the grating and camera shutters with <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> gshut open</TT> and <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> camshut open</TT>. The second command doesn't actually do anything, as the camera shutters are always open, but the telescope still needs to know this. Ignore the error message which comes up.
+          </p>
+          <b>picture of the gratings/ grating port</b>
+          <p>Select the required central wavelength for the setup using <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> cenwave {central_wavelength}</TT>.</p>
+          </section>
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3 id="spectrograph">Setting up the Spectrograph</h3>
+            <p>It's probably better to move the telescope slightly to make it easier to acccess the grating ports and cryostat.</p>
+            <p>Set the slitwidth to a small value (like <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> slitarc {1.0}</TT>) for accuracy. This <b>does not</b> have to be the same as the value required for the night's observations.</p>
+            <p>Make sure binning is 1 1 and rspeed is fast (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> bin 1 1</TT> & <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> rspeed fast</TT>).</p>
+            <p>Window the CCD to only cover the useful slit length:
+                <ul>
+                    <li>EEV10: <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> window 1 "[785:1150,1:4200]"</TT></li>
+                    <li>Red+2: <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> window 1 "[800:1165,1:4200]"</TT></li>
+                </ul>
+            </p>
+            <p>Set the collimator and dekker to optimal positions:
+                <ul>
+                    <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> collimator 225</TT></li>
+                    <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> dekker 0</TT></li>
+                </ul>
+            </p>
+            <p>Take a glance to estimate the exposure time which gives the best focus. Make a line fit with IRAF (press 'k' for Gaussian fit):
+                <ul>
+                    <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> compmirror in</TT></li>
+                    <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> complamps CuNe+CuAr</TT></li>
+                    <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> glance {exp}</TT> (10s)</li>
+                </ul>
+            </p>
+            <p>Then take an arc with that exposure time and call it "rotation test":
+                <ul>
+                    <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> arc {exp} "rotation test"</TT></li>
+                </ul>
+            </p>
+            <p>Use the <b>arc maps</b> to match arc lines on the map to those in the image fit. Note that for Red+2 redder wavelengths are at higher y-values, the opposite is true for EEV10.</p>
+            <p>Check the arc lines are well distributed across the detector by taking count values at y~1000, y~2000 and y~3000 pixels.</p>
+            <p>
+                <ul>
+                    <li><b>If the lines are visible but faint</b> then change the exposure time until a good fit is made with IRAF imexamine</li>
+                    <li><b>If no visible lines</b> shift the cenwave until you have visible lines (remember it will be less accurate the further you move from the cenwave. Check again at the requested cenwave once you get lines)</li>
+                </ul>
+            </p>
+            <p> </p>
+
+            <section class="IDSNotes">
+                <h4>Rotation Correction</h4>
+                <p>This is both important and fiddly. In IRAF load <TT><span style="background-color: #ffff80;">ecl&gt;</span> ids</TT> then type <TT><span style="background-color: #ffff80;">ids&gt;</span> ids_rotation rXXXXXX</TT> and click the option 1=arc (or just enter).</p>
+                <p>Under "measured rotation" look at the "pixel shifts top to bottom". If the number &gt 0.2 pixels you need to correct for the CCD rotation.</p>
+                <section class="IDSNotes">
+                    <h5>Rotating the equipment</h5>
+                    <p>
+                        <ol>
+                            <li>Screw in the rotation micrometer so it is touching the mounting</li>
+                            <li>Loosen the cryostat rotation bolts with the Allen key</li>
+                            <li>Gently rotate the mount anticlockwise so it is no longer touching the micrometer</li>
+                            <li>Apply the recommended offset to the micrometer</li>
+                            <li>Rotate the mount clockwise so it is once again touching the micrometer</li>
+                            <li>Tighten a few rotation bolts (if possible closest to capstains A, B, C)</li>
+                            <li>Do the rotation test again and see what the recommended offset is (get it to &lt 0.2)</li>
+                            <li>When successful, tighten (but don't overtighten) all rotator bolts</li>
+                            <li>Finally, unscrew the rotation micrometer a little so it's not in contact with the mount to reduce "clanging" when the telescope moves</li>
+                        </ol>
+                    </p>
+                    <p style="background-color: #00903033;"><b>Note: This does not affect the focus or the width of the arc lines, so if they are blurred, you might have been an idiot and detached the cryostat!</b></p>
+                </section>
+                <p> </p>
+                <section class="IDSNotes">
+                    <h5>Tip-tilt Correction</h5>
+                    <p>This is slightly less fiddly than the rotation correction. 
+                      <ol>
+                        <li>First find the Y values of three bright lines at roughly Y = 1000, Y = 2000 and Y = 3000</li>
+                        <li>Take exposures by running the <TT><span style="background-color: #50505033;">USER&gt;</span> runhart {exp}</TT> command. Exp is usually about double that of the last images</li>
+                        <li>Run the <TT><span style="background-color: #ffff80;">ids&gt;</span> ids_tilt rXXXXXXA rXXXXXXB Y1 Y2 Y3</TT> command in IRAF</li>
+                        <li>The average, top-bottom and left-right hartman shifts should all be &lt; 0.5 pixels and the errors should all be &ls 0.1 full turns</li>
+                        <li>To correct, move the capstains according to the recommended shift (eg. 0.25 is one quarter turn). Move in the order C, A, B</li>
+                      </ol>
+                    </p>
+                </section>
+                <p> </p>
+                <section class="IDSNotes">
+                  <h5>Spectrograph Focus Correction</h5>
+                  <p>Apply the correction to the collimator from the hartman test with <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> collimator {value}</TT>. Note that this correction should not move the collimator out of the range <b>215-400</b>.</p>
+                  <p>Open both hartman shutters after the test with the command <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> hart 0 0</TT>.</p>
+                  <p>Once the setup is okay, send the micrometers of the capstains A, B and C and the rotator micrometer to the IDS instrument specialist (Lucia).</p>
+                  <p>Also send detector information, the grating and the central wavelength of the setup.</p>
+                  <p>Make sure the micrometers are no longer touching the IDS again to reduce shaking/grating.</p>
+                  <p>Once the setup is completed:
+                    <ol>
+                      <li>Switch off arc lamps (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> complamps off</TT>)</li>
+                      <li>Set the slit width requested by the PI (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> slitarc {width}</TT>)</li>
+                      <li>Set the detector window requested by the PI (eg. <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> window 1 "[1:4200,765:1650]"</TT>)</li>
+                      <li>Set the detector binning requested by the PI (eg. <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> bin 1 1</TT>)</li>
+                      <li>set the readout speed requested by the PI (eg. <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> rspeed slow</TT>)</li>
+                    </ol>
+                  </p>
+                  <p>Every time a mechanical change is made, an image should be taken to </p>
+                </section>
+            </section>
+          </section>
+
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3 id="autoguider">Preparing the Autoguider</h3>
+            <p>Suitable guid stars can be found using the GSS2 interface. To find it:
+              <ol>
+                <li>Open a terminal and type <TT><span><b>intobs@inticsdisplay&gt;</b></span> ssh -Y gss@whtgss</TT></li>
+                <li>Login as gss, the password is on the whiteboard</li>
+                <li>Type <TT><span><b>[gss@intgss ~]$</b></span> gss2</TT></li>
+                <li>In the new window that pops up, set the gss2 configuration to INTCass</li> 
+              </ol>
+            </p>
+            <p>The autoguider FoV is &sim; 80 &times; 60 arcsec</p>
+          </section>
+
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3 id="AG0">Setting up the Acquisition Camera</h3>
+            <p>In the orange DAS6 window on the TCS type the command <TT><span style="background-color: #ff9000;">DAS6@miranda&gt;</span> bin 3 3</TT> into miranda and check on the mimic that the AG0 is centred on the slit. The mimic should show the values <i>TVX: 498000</i> and <i>TVY: 500000</i></p>
+            <p>Check that the image is inverted in y (<i>Zoom &rightarrow; Invert Y</i>>) and that the rotation is set to 0.</p>
+            <p>Check that the <span style="color:green"><b>+</b></span> (rotator centre) and <span style="color:red"><b>+</b></span> (slit centre) are visible on the screen (<i>Region &rightarrow; Load Regions...</i>).</p>
+            <p>The acquisition camera (AG0) FoV is &sim; 75 &times; 70 arcsec.</p>
+          </section>
+
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3 id="QCNights">Quality Control Tests (D-nights)</h3>
+            <h4>Dust in the Slit</h4>
+            <p>For IDS you should pay attention to flats to check for dust in the slit, which look like absorption columns a few pixels wide.</p>
+            <figure>
+              <img src="dusty-slit.jpg" alt="An image showing the effect of dust in the IDS slit">
+              <figcaption>An image of a dusty slit, see the lines coming from the individual pieces of dust.</figcaption>
+            </figure>
+
+            <h4>CCD Quality Control</h4>
+            <p>Once the setup for the night has been completed, perform the CCD quality control tests on the website and send the results to Lucia. Then Perform a linearity test if time permits.</p>
+          </section>
+
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3>Zeroset and Pointing Model</h3>
+            <p>Useful at the start of a run, as the telescope is forgetful in its old age. Zerosetting is really simple:
+              <ol>
+                <li>Make sure the telescope is parked at zenith (<TT><span style="background-color: #50505033;">USER&gt;</span> park zenith</TT>)</li><br>
+                <li>Change to engineering mode and make sure the oil pumps are on</li><br>
+                <li>Move the HA in SLOW motion by pressing the '-' button until the small yellow light above the dial flashes to indicate you have passed the zenith (you might get a bing if you're lucky). You can use the dial as an indicator of where the HA should move (there is a sticker to indicate the zeroset position).</li><br>
+                <li>Do the same with DEC, note that there is no dial to show you which way to move. I would recommend starting with the '-' button. If the yellow light does not blink after &sim;10 seconds, then hold the '+' button for 20 seconds.</li><br>
+                <li>Now in the TCS terminal, make sure the encoders are logging for 10 minutes and set the two targets with the commands:
+                  <ul>
+                    <li><TT><span style="background-color: #50505033;">USER&gt;</span> LOG ENC ON 10</TT></li>
+                    <li><TT><span style="background-color: #50505033;">USER&gt;</span> zeroset ha target</TT></li>
+                    <li><TT><span style="background-color: #50505033;">USER&gt;</span> zeroset dec target</TT></li>
+                  </ul>
+                </li><br>
+                <li>Now go back to the engineering console and move the HA in the opposite direction to before ('+' button), until the yellow light flashes again.</li><br>
+                <li>Do the same with the DEC.</li><br>
+                <li>Back on the terminal, you should now see a message saying that the zeroset has been performed on HA and DEC.</li><br>
+                <li>Press ENTER, then type <TT><span style="background-color: #50505033;">USER&gt;</span> LOG ENC OFF</TT></li><br>
+                <li>The TCS should acknowledge that the zeroset has been completed successfully.</li><br>
+                <li>Once this has been completed, type <TT><span style="background-color: #50505033;">USER&gt;</span> calibrate default</TT> to indicate to the TCS which pointing model to use.</li>
+              </ol>
+            </p>
+          </section>
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3>Recalculating the Rotator Centre</h3>
+            <p>The rotator centre should be checked every IDS D-night especially when it is the first IDS night after an instrument change. It takes around 15 minutes and can be done at twilight as soon as bright stars are visible.</p>
+            <p>You can do this test with any IDS setup and with any seeing.</p>
+            <p>Point the telescope at a bright star, then move the star to an edge of the aquisition FoV. Take note of the star's initial position (x0, y0).</p>
+            <p>Rotate the Cassegrain by 180 degrees and note the star's position (xf, yf) with the command <TT><span style="background-color: #50505033;">USER&gt;</span> rot sky {angle +/- 180}</TT>.</p>
+            <p>Calculate the rotation centre using the equations: <b>xc = (x0 + xf)/2</b> and <b>yc = (y0 + yf)/2</b>.</p>
+            <p>Change the position of the <span style=color:green><b>+</b></span> to (xc, yc) and move the star to this position.</p>
+            <p>Rotate 180 degrees again. If the star is still on the <span style=color:green><b>+</b></span> they it was a successful calculation. Otherwise, do it again. Save the new position with <i>"Regions... save regions.."</i> etc.</p>
+            <p>Compare the new and old centres and estimate the distance between the two.</p>
+          </section>
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3>Seven-Star Calibrate</h3>
+            <p>This should be done on every IDS D-night and by the SA before a run (and also maybe by an observer if the single star calibrate doesn;t improve the pointing).</p>
+            <p>This should always be done <b>after</b> checking the position of the rotator centre (<TT><span style="background-color: #50505033;">USER&gt;</span> enter aperture 0 0 0</TT>).</p>
+            <p>Run the 7-star calibration script with the command <TT><span style="background-color: #50505033;">USER&gt;</span> cal faint</TT>.</p>
+            <p>Click the TV button on the aquisition camera to take images and adjust the exposure time if neccessary.</p>
+            <p>Centre a star on the <span style=color:green><b>+</b></span> using the X_Y offset.</p>
+            <p>Use the handset again to  find a new star once this is centred, and do the same thing again. Repeat for 7 stars.</p>
+            <p>The script ends once the 7th star is centred. Click "Y" to confirm that the 7 stars were centred correctly. Click "Y" again to use the new calibrate result.</p>
+
+            <section class="IDSNotes">
+              <h4>Single Star Calibrate</h4>
+              <p>
+                This should be plenty useful for an observing run, unless the TCS was restarted.<br>
+                Turn on the AG0 by pressing the <b>TV</b> button<br>
+                Centre aperture on rotator centre: <TT><span style="background-color: #50505033;">USER&gt;</span> enter aperture 0 0 0</TT><br>
+                Move to a suitable faint calibration star: <TT><span style="background-color: #50505033;">USER&gt;</span> cal faint</TT><br>
+                Once the handset appears, press the HANDSET key to get rid of it.
+                If the star is not centred on the <span style=color:green><b>+</b></span>, reopen the handset and centre it using the controls in X_Y.<br>
+                Once the star is centred, exit the handset and type: <TT><span style="background-color: #50505033;">USER&gt;</span> point calibrate</TT><br>
+                Then: <TT><span style="background-color: #50505033;">USER&gt;</span> cal anal zero</TT><br>
+                Typically, the rms is around 0.01. If &gt;0.05, redo the calibrate.
+              </p>
+            </section>
+          </section>
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3>Focusing the Telescope</h3>
+            <p>You can do a focusrun using the <TT>focusrun.py</TT> script or by doing it manually. See the manual to do it manually.</p>
+            <p>Make sure the filters are both out (0)</p>
+            <p>Point the telescope to a selected spectrophotometric star (<TT><span style="background-color: #50505033;">USER&gt;</span> gocat {SPXXXXXXXX}</TT>)</p>
+            <p>Use the HANDSET to centre the star on the slit centre (<span style=color:red><b>+</b></span>). The slit width should be the same as for the science observations.</p>
+            <p>Set the guiding so that the star doesn't drift during the focus run</p>
+            <p>Check the necessary exposure time needed to avoid seeing variations (&gt; 5 seconds)</p>
+            <p>Use fast readout speed (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> rspeed fast</TT>)</p>
+            <p>
+              Run the focus run script (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> focusrun.py</TT>) and set the parameters by answering the questions
+              <ul>
+                <li>Starting focus value: 0.2 mm below the previous value</li>
+                <li>Step size: 0.05</li>
+                <li>Number of steps: 9</li>
+                <li>Exposure time: depends on the grating, test beforehand</li>
+              </ul>
+            </p>
+            <p>Run the star focus script in IRAF (<TT><span style="background-color: #ffff80;">ids&gt;</span> !ids_starfocus</TT>) and input the first image of the sequence.</p>
+            <p>Point the cursor in the continuum of the star (Y&sim;2100 px) and press 'g'. Each image will be fit in turn and a best focus suggested at the end.</p>
+            <p>Once this is done, enter the focus into the ICS (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> focus {XX.XX}</TT>) and change back to <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> rspeed slow</TT></p>   
+          </section>
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3>Check the Slit Centre Position</h3>
+            <p>Can be done with any setup and any seeing, and can be done in 10 minutes at twilight as soon as bright stars are visible.</p>
+            <p>Find a bright star, place it in the slit centre (<span style=color:red><b>+</b></span>) and take an image with the standard window.</p>
+            <p>Display the IDS image in DS9 and check the position of the target spectrum. If the spectrum is not in the centre of the image then estimate the new position of the <span style=color:red><b>+</b></span> and apply it to the aquisition camera.</p>
+            <p>Save with <i>Regions... Save region...</i> etc.</p>
+            <p>Take an image of the target with the full detector.</p>
+          </section>
+          <p> </p>
+
+          <section class="IDSNotes">
+            <h3>Ghosts...</h3>
+            <p>IDS has two types of grating: Ruled (R300V, R900R) and Holographic (H1800V, H2400V).</p>
+          </section>
+          <p> </p>
+          </section>
+
+          <h2>Observing</h2>
+
+          <section class="IDSNotes">
+            <h3>Target Acquisition</h3>
+            <p>
+              To point to a target from the catalogue, type the command: <TT><span style="background-color: #50505033;">USER&gt;</span> gocat {target}.</TT><br>
+              Rotate the CASS rotator mount to the correct position angle for observations: <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> rotate sky {xxx}</TT><br>
+              <ul style="list-style-type: none;">
+                <li><b>NOTE: Do not move to a position angle between 138 - 142 degrees. Use instead 318 - 322 degrees.</b></li>
+              </ul>
+            </p>
+          </section>
+          <br>
+
+          <section class="IDSNotes">
+            <h3>Guiding</h3>
+            <p>
+              <b>You should use guiding if your exposures are longer than 2 minutes</b><br>
+              While the telescope is moving to the target, enter the coordinates of the target into GSS2.<br>
+              Select INTCass from the Configuration menu.<br>
+              Fill in the Rotator SkyPA with the mount PA shown in the TCS.<br>
+              Set the aperture offset vals to the X/Y HANDSET offsets required to find the target. If none, then 0.<br>
+              Click <i>Search</i>.<br>
+              Read the given guid stars and copy the X/Y positions into the command: <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> autoxy xxxxxx yyyyyy</TT><br>
+              Once this has run: <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> field</TT><br>
+              Hopefully, the autoguider will find some guide stars and name them for you (1, 2, 3 etc.)<br>
+              Pick a star and: <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> guide on star {n}</TT><br>
+              <b>If there are no guide stars, check the manual and the troubleshooter.</b>
+            </p>
+          </section>
+          <br>
+
+          <section class="IDSNotes">
+            <h3>Blind Offsets</h3>
+            <p>Gocat to the blind offset target (<TT><span style="background-color: #50505033;">USER&gt;</span> gocat {target_blind}</TT>)</p>
+            <p>Rotate the sky to the chosen PA (<TT><span style="background-color: #50505033;">USER&gt;</span> rot sky {PA}</TT>)</p>
+            <p>Use the handset to move the target to the slit centre (<span style=color:red><b>+</b></span>, make sure you're in x_y)</p>
+            <p>Type the RA and dec of the <b>science target</b> into the guide star search. Also input the PA and offset from the handset then click search</p>
+            <p>Choose the brightest guide star</p>
+            <p>Move the autoguider to this star using the pixel values (<span style="background-color: #ff8dc4;">SYS&gt;</span> autoxy {x} {y}</TT>)</p>
+            <p>
+              Move to the blind target (<TT><span style="background-color: #50505033;">USER&gt;</span> blind {target}</TT>)
+              <ul style="list-style-type: none;">
+                <li><b>NOTE: You won't see the science object in the AG0</b></li>
+              </ul>
+            </p>
+            <p>Find the stars around the target (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> field</TT>)</p>
+            <p>Guide on a star in the field (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> guide on star {n}</TT>)</p>
+            <p>Take your image! (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> run {exp}</TT>)</p>
+            <p>Take an arc (<TT><span style="background-color: #ff8dc4;">SYS&gt;</span> runarc</TT>)</p>
+            <p>Check them in IRAF, guide off and do it all again!</p>
+          </section>
+          <br>
+
+          <section class="IDSNotes">
+            <h3>Observing Commands</h3>
+            <p>This is a list of the most useful commands used throughout a night.</p>
+            <h4>talkerBellINT</h4>
+            <p>
+              Use this to make the telescope beep after a command has been completed. Useful after long exposures etc.<br>
+              Eg: <TT><span style="background-color: #ff8dc4;">SYS&gt;</span> run 1800 ; talkerBellINT</TT> - makes a bing after an 1800s exposure.
+            </p>
+
+            <h4>Science Exposures</h4>
+            <p>
+              <ul>
+                <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> run 1200 "XXXXX"</TT><br>
+                Exposes for 1200s and names the image 'XXXXX'</li>
+                <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> multrun 3 1200</TT><br>
+                Takes 3 1200s exposures back-to-back</li>
+                <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> guide off</TT><br>
+                Stops guiding</li>
+                <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> guide on</TT><br>
+                Continues guiding on the same star if the telescope has not moved</li>
+              </ul>
+            </p>
+
+            <h4>Interrupting Exposures</h4>
+            <p>There are 3 commands to affect observations while they are running. To get the prompt back in the ICS use <b>Ctrl-z</b>. Then type one of the following commands:
+            <ul>
+              <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> abort</TT><br>
+              Terminates an observation started by <b>run</b> (or similar). The observation is <b>not saved</b> to disk. If multrun was used, all subsequent runs are also terminated.</li>
+              <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> finish</TT><br>
+              Terminates an observation started by <b>run</b> (or similar). The onservation <b>is saved</b> to disk as if the full exposure was completed. If multrun was used, the subsequent runs remain unaffected.</li>
+              <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> newtime {new_exp_time}</TT><br>
+              Alters the exposure time of the current observation.</li>
+            </ul>
+          </p>
+          <br>
+
+          <p>If running a script which executes other commands (e.g. compmirrors etc.) you need to terminate the script. Try:
+            <ul>
+              <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> <b>&lt;Ctrl&gt;-c</b></TT></li>
+              <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> <b>&lt;Ctrl&gt;-z</b></TT></li>
+              <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> jobs</TT></li>
+              <li><TT><span style="background-color: #ff8dc4;">SYS&gt;</span> kill %n</TT></li>
+            </ul>
+          </p>
+          </section>
+        </section>	 
+	  </main>
+	  
+    <footer style="text-align:center; font-size: 10px; bottom:0%">
+      <nav style="background-color:#000000; padding:0.5em; border-radius:0px; display:flex; flex-direction:row; justify-content:space-around;">
+        <ul>
+          <li style="list-style-type:none; margin-right:0.5em; margin-left:0.5em; text-align:center;"><b><span style="color:#fcc367">Personal Email:</span> kiran.jhass@googlemail.com</b></li>
+          <li style="list-style-type:none; margin-right:0.5em; margin-left:0.5em; text-align:center;"><b><span style="color:#fcc367">University Email:</span> kjhass1@sheffield.ac.uk</b></li>
+          <li style="list-style-type:none; margin-right:0.5em; margin-left:0.5em; text-align:center;"><b><span style="color:#fcc367">Phone:</span> 07538783747</b></li>
+          <li style="list-style-type:none; margin-right:0.5em; margin-left:0.5em; text-align:center;"><b><span style="color:#fcc367">LinkedIn:</span> Kiran Jhass</b></li>
+          <li style="list-style-type:none; margin-right:0.5em; margin-left:0.5em; text-align:center;"><b><span style="color:#fcc367">Facebook:</span> Kiran Jhass</b></li>
+          <li style="list-style-type:none; margin-right:0.5em; margin-left:0.5em; text-align:center;"><b><span style="color:#fcc367">Instagram:</span> kiranj_1</b></li>
+        </ul>
+      </nav>
+    </footer>
+	</body>
+</html>
