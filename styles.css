@@ -1,0 +1,546 @@
+/* BACKGROUND */
+html {
+    background-color: #fff8e7;
+}
+
+/* HEAD */
+head {
+    background-color: #fff8e7;
+}
+
+/* MAIN BODY */
+/* -------------------------------------------------------------- */
+body {
+    background-color: #fff8e7;
+    font-size: 20pt;
+    font-family: "Lato", sans-serif;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* headings */
+h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 40pt;
+    color: #003530;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    color: #003530dd;
+    font-size: 26pt;
+}
+
+h3 {
+    font-family: "Lato", sans-serif;
+    color: #007060dd;
+    font-size: 15pt;
+    text-align: left;
+}
+
+/* On smaller screens, where width is less than 500px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 500px) {
+    h1 {font-size: 20pt;}
+    h2 {font-size: 13pt;}
+    h3 {font-size: 11pt;}
+}
+
+nav ul {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    /* background-color: #00000010; */
+    border-radius: 0px;
+    font-size: 11pt;
+}
+
+nav ul li {
+    list-style-type: none; 
+    margin-right: 2%; 
+    margin-left: 2%; 
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #502050;
+}
+
+@media screen and (max-width: 500px) {
+    nav ul {flex-direction: column;}
+    nav ul li {text-align: left;}
+    }
+
+nav ul li a:hover {
+    color: #fcc367;
+    font-weight: bold;
+}
+
+/* FOOTER */
+/* --------------------------------------------------------------- */
+footer {
+    margin-left: 15%;
+    text-align:center; 
+    font-size: 10px; 
+    bottom: 0%;
+    left: 50%;
+    right: 10%;
+    margin: 0 auto;
+}
+
+    footer nav ul {
+        margin-left: 15%;
+        /* background-color: #000000dd; */
+        background-color: #202020;
+        padding: 0.5em;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+        footer nav ul li {
+            margin-left: 15%;
+            color: #ffffff;
+            list-style-type:none; 
+            margin-right:0.5em; 
+            margin-left:0.5em; 
+            text-align:center;
+        }
+
+        /* On smaller screens, where width is less than 500px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 500px) {
+    footer {margin-left: 10%;}
+    footer nav ul li {font-size: 4pt;}
+    }
+
+/* SIDEBAR */
+/* --------------------------------------------------------------- */
+/* sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 15%;/* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    /* background-color: #000000dd; */
+    background-color: #202020;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+    .sidenav span {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #000000;
+        display: block;
+    }
+
+    .sidenav li { /* for contact details */
+        /* padding: 6px 8px 6px 16px; */
+        text-decoration: none;
+        font-size: 10px;
+        color: #fff8e7;
+        display: block;
+    }
+
+        .sidenav li a {
+            /* padding: 6px 8px 6px 16px; */
+            text-decoration: none;
+            font-size: 10px;
+            color: #fff8e7;
+            display: block;
+        }
+
+            .sidenav li a:hover {
+                color: #003530;
+            }
+
+/* navigation menu links */
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #003530;
+        }
+  
+  /* Style page content */
+  .main {
+    justify-content: center;
+    max-width: 85%;
+    margin-left: 15%; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+  }
+
+    .main p {
+        padding: 0px 30px;
+    }
+
+    .main h2 {
+        padding: 0px 30px;
+    }
+
+    .main h3 {
+        padding: 0px 30px;
+        text-align: left;
+    }
+
+        .main nav li {
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+            .main nav li a{
+                text-decoration: none;
+                font-size: 20pt;
+                color: #502050;
+            }
+
+                .main nav li a:hover {
+                    color: #003530;
+                }
+
+    .main p a {
+        color: #903090;
+        text-decoration: none;
+    }
+
+        .main p a:hover {
+            color: #003530;
+        }
+  
+  /* On smaller screens, where width is less than 1500px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-width: 500px) {
+    .sidenav {padding-top: 15px; font-size: 10pt; width: 25%;}
+    .sidenav a {font-size: 10pt;}
+    .sidenav span {font-size: 10pt;}
+    .sidenav li a b {font-size: 4pt;}
+    .main {margin-left: 25%;}
+    .main p {padding: 0px 15px; font-size: small;}
+  }
+
+/* FOR CARDS */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 10px;
+  }
+
+.card {
+    /* color: #000000cc;
+    background-color: #00000010;
+    border-color: #000000aa; */
+    color: white;
+    /* background-color: #000000dd; */
+    background-color: #000000bb;
+    border-color: #000;
+
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 11pt;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin-top: 10px;
+    height: 160px;
+}
+  
+    .card:hover {
+        /* color: white;
+        background-color: #000000dd;
+        border-color: #000; */
+
+        margin-left: auto;
+        margin-right: auto;
+
+        color: #000000cc;
+        background-color: #00000030;
+        border-color: #000000aa;
+        /* box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+        transform: translateY(-2px);
+        transition: all 0.1s ease-out; */
+    }
+
+    .card h3 {
+        color: #fcc367;
+    }
+
+    .card:hover h3 {
+        color: #003530;
+    }
+
+.mediumPictures {
+    float:inline-end;
+    height: 140px;
+    max-width: fit-content;
+}
+
+.largePictures {
+    float: inline-end;
+    height: 200px;
+    max-width: fit-content;
+}
+
+/* On smaller screens, where width is less than 500px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 500px) {
+    .card {height: 15px;}
+    .card p {font-size: 4pt;}
+    .card h3 {font-size: 10pt;}
+    .mediumPictures {height: 10px;}
+}
+
+/* BACKGROUND IMAGE - MAIN*/
+.back-image {
+    background: url(header2.png) no-repeat center;
+    position: fixed;
+    opacity: 1.00; 
+    background-size: cover;
+    height: 250px;
+    position: relative;
+  }
+  
+  .back-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+/* BACKGROUND IMAGE - PROJECTS*/
+.back-image-proj {
+    background: url(projects/proj-header.jpg) no-repeat center;
+    position: fixed;
+    opacity: 1.00; 
+    background-size: cover;
+    height: 250px;
+    position: relative;
+  }
+
+/* BACKGROUND IMAGE - CVS*/
+.back-image-cv {
+    background: url(cvs/cv-header.jpg) no-repeat center;
+    position: fixed;
+    opacity: 1.00; 
+    background-size: cover;
+    height: 250px;
+    position: relative;
+  }
+
+/* EMBEDDED PDFS */
+.pdf {
+    justify-content: center;
+    width: 90%; 
+    height: 1000px; 
+    margin-left: 5%;
+}
+
+/* THE PLANETS */
+.mercury {
+    color: #909090;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #303030;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .mercury h3 {
+        color: #cccccc;
+        font-size: 30pt;
+    }
+
+.venus {
+    color: #c1ac7c;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #876c19;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .venus h3 {
+        color: #c18f17;
+        font-size: 30pt;
+    }
+
+.earth {
+    color: #608e10;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #102d5f;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .earth h3 {
+        color: #254f98;
+        font-size: 30pt;
+    }
+
+.moon {
+    color: #808080;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #808080;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .moon h3 {
+        color: #404040;
+        font-size: 30pt;
+    }
+
+.mars {
+    color: #451804;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #c1440e;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .mars h3 {
+        color: #e77d11;
+        font-size: 30pt;
+    }
+
+.jupiter {
+    color: rgb(201, 57, 98);
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #ddbca6;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .jupiter h3 {
+        color: #e1b259;
+        font-size: 30pt;
+    }
+
+.saturn {
+    color: #f5d598;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #ead6b8;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .saturn h3 {
+        color: #c25b5b;
+        font-size: 30pt;
+    }
+
+.uranus {
+    color: #afdbf5;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #afdbf5;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .uranus h3 {
+        color: #62aee7;
+        font-size: 30pt;
+    }
+
+.neptune {
+    color: #74d6fd;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+    /* background-color: #2b378b;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+    .neptune h3 {
+        color: #1f2255;
+        font-size: 30pt;
+    }
+
+.changeButton {
+    color: white; 
+    font-weight: bold;
+    background: #00000060; 
+    border: none;
+    border-radius: 40%;
+    margin-left: 41%;
+    height: 30px;
+}
+
+    .changeButton:hover {
+        box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+        transform: translateY(-2px);
+        transition: all 0.1s ease-out;
+        background-color: #003530;
+    }
+
+.planButton {
+    background: transparent !important; 
+    border: none !important; 
+    font-size: 0;
+    margin-left: 40%;
+}
+
+.planetPage {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    background-color: #000000df;
+}
+
+/* circle buttons */
+a text {
+    font-size: 14pt;
+}
+
+    a:hover text {
+        fill: #000000cc;
+    }
+
+a:hover circle { 
+    fill: #818181;
+}
+
+.cvCircle:hover {
+    fill: #007060;
+}
