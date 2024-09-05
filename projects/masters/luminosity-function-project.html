@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Galaxies luminosity function project</title>
+        <link type="text/css" rel="stylesheet" href="../../styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <main>
+          <!-- side bar -->
+          <div class="sidenav">
+            <img src="../../sex1.png" alt="Me during an observing night at the Observatorio de Roque de los Muchachos in La Palma." style="margin-left: 10%; width: 75%; justify-content: center;"><br>
+            <br>
+            <a href="../../index.html">About</a>
+            <a href="../../projects.html">Projects</a>
+            <a href="../../employment.html">Employment</a>
+            <a href="../../cv.html">CV</a>
+            <br>
+            <li><a href="mailto:kiran.jhass@googlemail.com"><i class="fa fa-envelope fa" style="color:#fcc367"></i>&emsp;<b>kiran.jhass@googlemail.com</b></a></li>
+            <li><a><i class="fa fa-mobile fa-lg" style="color:#fcc367"></i>&emsp;<b>07538783747</b></a></li>
+            <li><a href="https://www.linkedin.com/in/kiran-jhass-8267b01ba/"><i class="fa fa-linkedin fa-lg" style="color:#fcc367"></i>&emsp;<b>Kiran Jhass</b></a></li>
+            <li><a href="https://orcid.org/0009-0007-5240-6861"><i style="color:#fcc367"><b>ORCiD</b></i>&emsp;<b>0009-0007-5240-6861</b></a></li>
+          </div>
+          
+          <!-- Page content -->
+          <div class="main">
+            <div class="back-image-proj">
+              <div class="back-text">
+                <h1 style="font-size:50px; color: #fff8e7aa;">Galaxy luminosity function coding project</h1>
+              </div>
+            </div>
+
+            <p>
+                The galaxy luminosity function is an extremely important plot for cosmologists who study the properties of galaxy populations as a function of redshift.
+                The formation and evolution of a single galaxy cannot be observed directly, as galactic timescales are far too long.
+                Instead, galaxies with different "lookback times" or redshift are observed to build up a picture of galaxy formation and evolution.
+                The aim of this project was to deterimine the cosmological parameters of a model universe by determining the galaxy luminosity function and fitting a Schechter function to it.
+            </p>
+            <br>
+
+            <!-- remove faint galaxies -->
+            <h3>Remove faint galaxies</h3>
+            <p>
+                Firstly, the faint galaxies (&lt;3&sigma;) in the sample were removed. This was done by removing galaxies with magnitudes greater than:<br>
+                <br>
+                <span style="text-align: center; margin-left: 10%;">m <sub>lim</sub> = 22 - 2.5 log<sub>10</sub>(3)</span><br>
+                <br>
+                where 22 is the magnitude limit of the survey.
+                The data were stored in a pandas dataframe, with three columns: redshift, apparent magnitude, error in apparent magnitude.
+                The code for the removal of the faint galaxies can be seen below:
+            </p>
+            <img src="galproj/1.png" style="justify-content: centre; width: 90%; margin-left: 5%;">
+            <br>
+
+            <!-- galaxy number counts -->
+            <h3>Galaxy number counts</h3>
+            <p>
+                Next, the number count of the bright galaxies were calculated. 
+                Note that this is not necessary for calculating a luminosity function.
+                The number counts are shown as a function of redshift and apparent magnitude.
+            </p>
+            <img src="galproj/number-counts.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+            <br>
+
+            <!-- include only z < 0.1 -->
+            <h3>Include only galaxies with z &lt; 0.1</h3>
+            <p>
+                Now, only galaxies between redshifts 0 and 0.1 (0 &lt; z &lt; 0.1) were selected for the luminosity function. 
+                Higher redshift galaxies were removed with the following code:
+            </p>
+            <img src="galproj/redshift-1.png" style="justify-content: center; width: 90%; margin-left: 5%;">
+            <br>
+
+            <!-- survey volume -->
+            <h3>Survey volume</h3>
+            <p>
+                The volume of the survey was then calculated using the co-moving distance at z = 0.1. 
+                This was calculated to be 82,184 Mpc<sup>3</sup> using the code below:
+            </p>
+            <img src="galproj/surv-vol.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+            <br>
+
+            <!-- luminosity distance -->
+            <h3>Luminosity distance</h3>
+            <p>
+                Next, the lumonsity distance was calculated for each galaxy.
+            </p>
+            <img src="galproj/lumdis.png" style="justify-content: center; width: 90%; margin-left: 5%;">
+            <br>
+
+            <!-- absolute magnitude -->
+            <h3>Absolute magnitude</h3>
+            <p>
+                Using the luminosity distance, the absolute magnitude of each galaxy in the survey could be calculated. 
+                This was done with the function below:
+            </p>
+            <img src="galproj/abs-mag-func.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+            <p>
+                The function was then used to calculate the absolute magnitude for each galaxy.
+            </p>
+            <img src="galproj/abs-mag.png" style="justify-content: center; width: 60%; margin-left: 20%;">
+            <br>
+
+            <!-- limiting absolute magnitude -->
+            <h3>Limiting absolute magnitude</h3>
+            <p>
+                Using the limiting apparent magnitude (20.8) and the luminosity distance at z = 0.1, the limiting absolute magnitude was calculated with the code below.
+            </p>
+            <img src="galproj/abs-mag-lim.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+            <br>
+
+            <!-- galaxy luminosity function -->
+            <h3>Galaxy luminosity function</h3>
+            <p>
+                The galaxy luminosity function shows the number of galaxies per cubic megaparsec per magnitude.
+                The galaxies were binned by magnitude and the number of these galaxies per cubic co-moving distance was calculated.
+            </p>
+            <img src="galproj/lumfunc1.png" style="justify-content: center; width: 85%; margin-left: 7.5%;">
+            <img src="galproj/lumfunc2.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+            <br>
+
+            <!-- Schechter function -->
+            <h3>Schechter function</h3>
+            <p>
+                A Schechter function was then fit to the galaxy luminosity function to determine the cosmological parameters of the model universe.
+                The Schechter function is given by the following equation:<br>
+                <br>
+                n(M)dM = 0.4 ln(10) &phi;<sup>*</sup> [100.4(M<sup>*</sup>-M)]<sup>&alpha;+1</sup> e<sup>-100.4(M<sup>*</sup>-M)</sup>dM 
+                <br>
+                The function was fit with the following lines of code:
+            </p>
+            <img src="galproj/schechter-func.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+            <img src="galproj/schechter-plot-code.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+            <img src="galproj/schecter-fit.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+            <img src="galproj/schechter-plot.png" style="justify-content: center; width: 75%; margin-left: 12.5%;">
+
+          </div>
+        </main>
+
+        <footer>
+          <nav>
+            <ul>
+              <li><i class="fa fa-envelope fa" style="color:#fcc367"></i>&emsp;<b>kiran.jhass@googlemail.com</b></li>
+              <li><i class="fa fa-mobile fa-lg" style="color:#fcc367"></i>&emsp;<b>07538783747</b></li>
+              <li><i class="fa fa-linkedin fa-lg" style="color:#fcc367"></i>&emsp;<b>Kiran Jhass</b></li>
+              <li><i style="color:#fcc367"><b>ORCiD</b></i>&emsp;<b>0009-0007-5240-6861</b></li>
+            </ul>
+          </nav>
+        </footer>
+    </body>
+</html>
