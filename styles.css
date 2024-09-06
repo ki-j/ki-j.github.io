@@ -241,53 +241,47 @@ footer {
   }
 
 .card {
-    /* color: #000000cc;
-    background-color: #00000010;
-    border-color: #000000aa; */
-    color: white;
-    /* background-color: #000000dd; */
-    background-color: #000000bb;
-    border-color: #000;
+    color: black;
+    background-color: none;
+    border-color: none;
 
-    border-style: solid;
-    border-radius: 10px;
     font-size: 11pt;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    box-sizing: border-box;
+    text-decoration: none;
+
+    width: 100%;
     padding: 10px 10px;
+    margin-left: 0px;
     margin-top: 10px;
     height: 160px;
 }
   
     .card:hover {
-        /* color: white;
-        background-color: #000000dd;
-        border-color: #000; */
-
-        margin-left: auto;
-        margin-right: auto;
-
         color: #000000cc;
-        background-color: #00000030;
-        border-color: #000000aa;
-        /* box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
-        transform: translateY(-2px);
-        transition: all 0.1s ease-out; */
+        /* background-color: #00000010; */
+        background-image: linear-gradient(#00000020, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #00000020);
     }
 
     .card h3 {
-        color: #fcc367;
+        color: #007060;
     }
 
     .card:hover h3 {
         color: #003530;
     }
 
+.cardText {
+    float: left; 
+    width: 70%; 
+    font-size: 11pt;
+}
+
 .mediumPictures {
     float:inline-end;
     height: 140px;
     max-width: fit-content;
+    padding: 5px 10px;
 }
 
 .largePictures {
