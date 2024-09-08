@@ -11,8 +11,9 @@ head {
 /* MAIN BODY */
 /* -------------------------------------------------------------- */
 body {
+    color: #000000cc;
     background-color: #fff8e7;
-    font-size: 20pt;
+    font-size: 15pt;
     font-family: "Lato", sans-serif;
     max-width: 100%;
     height: 100%;
@@ -346,15 +347,13 @@ footer {
 }
 
 /* THE PLANETS */
+/* individual pages */
 .mercury {
     color: #909090;
     font-weight: bold;
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #303030;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .mercury h3 {
@@ -368,9 +367,6 @@ footer {
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #876c19;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .venus h3 {
@@ -384,9 +380,6 @@ footer {
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #102d5f;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .earth h3 {
@@ -400,9 +393,6 @@ footer {
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #808080;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .moon h3 {
@@ -416,9 +406,6 @@ footer {
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #c1440e;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .mars h3 {
@@ -432,9 +419,6 @@ footer {
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #ddbca6;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .jupiter h3 {
@@ -448,9 +432,6 @@ footer {
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #ead6b8;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .saturn h3 {
@@ -464,9 +445,6 @@ footer {
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #afdbf5;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .uranus h3 {
@@ -480,9 +458,6 @@ footer {
     font-size: small;
     padding: 20px 20px 20px 20px;
     background-color: #000000df;
-    /* background-color: #2b378b;
-    padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
     .neptune h3 {
@@ -490,6 +465,7 @@ footer {
         font-size: 30pt;
     }
 
+/* planet buttons */
 .changeButton {
     color: white; 
     font-weight: bold;
@@ -511,15 +487,25 @@ footer {
     background: transparent !important; 
     border: none !important; 
     font-size: 0;
-    margin-left: 40%;
+    border-radius: 50%;
+    width: 75px;
 }
 
+    .planButton:hover {
+        filter: brightness(50%);
+    }
+
+/* overall planet page format */
 .planetPage {
     color: #ffffff;
     font-weight: bold;
-    font-size: small;
-    padding: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
     background-color: #000000df;
+    height: 65px;
+}
+
+#planetSectImage {
+    margin-right: 0%;
 }
 
 /* circle buttons */
