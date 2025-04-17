@@ -24,13 +24,13 @@ body {
 h1 {
     font-family: "Lato", sans-serif;
     font-size: 40pt;
-    color: #003530;
+    color: #003022;
     text-align: center;
 }
 
 h2 {
     font-family: "Lato", sans-serif;
-    color: #003530dd;
+    color: #003022dd;
     font-size: 26pt;
 }
 
@@ -82,6 +82,11 @@ nav ul li a:hover {
     color: #fcc367;
     font-weight: bold;
 }
+
+th, td {
+    border-radius: 10px;
+    border-style: outset;
+  }
 
 /* FOOTER */
 /* --------------------------------------------------------------- */
@@ -161,7 +166,7 @@ footer {
         }
 
             .sidenav li a:hover {
-                color: #003530;
+                color: #003022;
             }
 
 /* navigation menu links */
@@ -175,7 +180,7 @@ footer {
 
         /* When you mouse over the navigation links, change their color */
         .sidenav a:hover {
-            color: #003530;
+            color: #003022;
         }
   
   /* Style page content */
@@ -211,7 +216,7 @@ footer {
             }
 
                 .main nav li a:hover {
-                    color: #003530;
+                    color: #003022;
                 }
 
     .main p a {
@@ -220,7 +225,7 @@ footer {
     }
 
         .main p a:hover {
-            color: #003530;
+            color: #003022;
         }
   
   /* On smaller screens, where width is less than 1500px, change the style of the sidebar (less padding and a smaller font size) */
@@ -237,39 +242,71 @@ footer {
 .cardContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 10px 10px;
   }
 
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 23%;
+    padding: 0 10px;
+  }
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .card {
     color: black;
-    background-color: none;
-    border-color: none;
+    background-color: #ffffff;
+    background: linear-gradient(180deg, #002015 0px, #002015 65px, white 65px, white 100%);
+    border-style: solid;
+    border-color: #808080;
+    border-radius: 10px;
+    border-width: 0.05cap;
+    box-sizing: border-box;
 
     font-size: 11pt;
     font-family: Arial, sans-serif;
-    font-weight: bold;
     text-decoration: none;
 
-    width: 100%;
-    padding: 10px 10px;
-    margin-left: 0px;
-    margin-top: 10px;
-    height: 160px;
+    padding: 0px 0px;
+    height: 500px;
 }
   
     .card:hover {
-        color: #000000cc;
-        /* background-color: #00000010; */
-        background-image: linear-gradient(#00000020, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #fff8e7, #00000020);
+        background-color: #ffffff;
+        box-shadow: 0px 0px 15px #00000050;
     }
 
+    .astroCard {
+        /* background: linear-gradient(180deg, #401040 0px, #401040 65px, white 65px, white 100%); */
+        background: linear-gradient(180deg, #601010 0px, #601010 65px, white 65px, white 100%);
+        height: 365px;
+    }
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
     .card h3 {
-        color: #007060;
+        color: white;
     }
 
     .card:hover h3 {
-        color: #003530;
+        color: white;
     }
 
 .cardText {
@@ -290,6 +327,14 @@ footer {
     height: 200px;
     max-width: fit-content;
 }
+
+.center { /* centre an image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+    width:fit-content;
+  }
 
 /* On smaller screens, where width is less than 500px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-width: 500px) {
@@ -480,7 +525,7 @@ footer {
         box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
         transform: translateY(-2px);
         transition: all 0.1s ease-out;
-        background-color: #003530;
+        background-color: #003022;
     }
 
 .planButton {
@@ -524,3 +569,312 @@ a:hover circle {
 .cvCircle:hover {
     fill: #007060;
 }
+
+/* languages pages */
+.polishContents {
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: #dc143c;
+}
+
+    .polishContentLink {
+        text-decoration: none;
+        color: #dc143c;
+    }
+
+    .polishItem:hover {
+        color: #500606;
+    } 
+
+.polishPhrase {
+    color: #8a0d26;
+}
+
+.polishPronunciation {
+    color: #fff8e7;
+}
+
+    .polishPronunciation:hover {
+        color: #8a0d2633;
+    }
+
+/* materials pages */
+.button {
+    border: none;
+    color: #ffffff;
+
+    padding: 15px 32px;
+    border-radius: 10px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+
+    .projectButton {
+        background-image: linear-gradient(20deg, #202020 0%, #202020 35%, #707070 100%);
+    }
+
+        .projectButton:hover {
+            background-image: linear-gradient(20deg, #050505 20%, #202020 60%, #707070 100%);
+        }
+
+    .astroButton {
+        background-image: url("projects/PN_head.jpg");
+        color: #fff8e7dd;
+    }
+
+        .astroButton:hover {
+            box-shadow: 0px 0px 7px black;
+        }
+
+    .physicsButton {
+        background-image: url("projects/rocket.jpeg");
+        color: #fff8e7dd;
+    }
+    
+        .physicsButton:hover {
+            box-shadow: 0px 0px 7px black;
+        }
+
+    .mathsButton {
+        background-image: url("projects/consciousness.jpeg");
+        color: #fff8e7dd;
+    }
+    
+        .mathsButton:hover {
+            box-shadow: 0px 0px 7px black;
+        }
+
+.chemButton {
+        background-image: url("projects/egypt-head.jpg");
+        color: #fff8e7dd;
+        }
+    
+        .chemButton:hover {
+            box-shadow: 0px 0px 7px black;
+        }
+
+.topicList {
+    list-style-type: none;
+}
+
+    .topicListItem {
+        text-decoration: none;
+        color: #502050;
+    }
+
+        .topicListItem:hover {
+            color: #994099;
+        }
+
+.mathsNumbers {
+    background-color: #99409920; 
+    border-radius: 10px; 
+    width: 90%; 
+    padding: 10px 10px;
+}
+
+.materialsContents {
+    width: 100%; 
+    /* width:fit-content; */
+    border-radius: 10px;
+    padding: 10px 10px;
+
+    list-style-type: none; 
+    text-align: left; 
+    font-size: small;
+    background-color: #fae8bedd;
+    text-decoration: none;
+    overflow: hidden;
+}
+    .materialsContents li a {
+        color: #300530;
+        text-decoration: none;
+        font-weight: bold;
+        float: left;
+        display: block;
+        border-radius: 2px;
+        padding: 4px 4px;
+        margin: 5px 5px;
+        border: #300530;
+        border-style: solid;
+    }
+        .materialsContents li a:hover {
+            color: #751575;
+            background-color: #fff8e7;
+            box-shadow: 5px 2px 5px #00000050;
+        }
+
+.sectionContents {
+    width: 90%; 
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+
+    list-style-type: none; 
+    text-align: left; 
+    font-size: small;
+    background-color: #25002560;
+    /* background-color: none; */
+    text-decoration: none;
+    overflow: hidden;
+}
+    .sectionContents li a {
+        float: left;
+        display: block;
+        /* color: #007060; */
+        color: #000020;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+    .sectionContents li a:hover {
+        color: #204090;
+    }
+
+/* .astroSection {
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-left: 30px;
+    background-color: #001020;
+    font-size: medium;
+}
+    .astroSection h2 {
+        color: #fff8e7;
+    }
+    .astroSection h4 {
+        color: #fff8e7ee;
+        margin-left: 30px;
+    }
+    .astroSection p {
+        color: #aaaaaa;
+    }
+    .astroSection figure figcaption{
+        color: #fff8e7ee;
+    }
+    .astroSectionDetail {
+        background-color: #ffffff90;
+        border-radius: 10px;
+        width: 90%;
+        padding: 10px 10px;
+    }
+        .astroSectionDetail p {
+            color: #002015;
+        }
+        .astroSectionDetail figure figcaption{
+            color: #000;
+        } */
+
+ .astroSection {
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-left: 30px;
+    background-color: #fff8e7aa;
+    font-size: medium;
+}
+    .astroSection h2 {
+        color: #000;
+    }
+    .astroSection h4 {
+        color: #001030;
+        margin-left: 30px;
+    }
+    .astroSection p {
+        color: #252525;
+    }
+    .astroSection figure figcaption{
+        color: #250025;
+    }
+    .astroSection .equation {
+        text-align: center; 
+        color: #fff8e7aa; 
+        font-style: italic; 
+        font-weight: bold; 
+        background-color: #001020aa; 
+        padding: 10px 10px; 
+        border-radius: 5px;
+    }
+        .astroSection span.bottom {
+            border-top: #fff8e7aa;
+        }
+    .astroSectionDetail {
+        background-color: #001020;
+        border-radius: 10px;
+        width: 90%;
+        padding: 10px 10px;
+    }
+        .astroSectionDetail h4 {
+            color: #fff8e7;            
+        }
+        .astroSectionDetail p {
+            color: #fff8e7cc;
+        }
+        .astroSectionDetail figure figcaption{
+            color: #90ddff;
+        }
+        .astroSectionDetail .equation {
+            text-align: center; 
+            color: #001020aa; 
+            font-style: italic; 
+            font-weight: bold; 
+            background-color: #fff8e7aa; 
+            padding: 10px 10px; 
+            border-radius: 5px;
+        }
+            .astroSectionDetail span.bottom {
+                border-top: #001020aa;
+            }
+
+.important {
+    color: #904020;
+}
+
+/* make a fraction */
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: solid;
+}
+.frac span.symbol {
+    display: none;
+} 
+
+.navButtons {
+    float: right;
+}
+    .navButtons a {
+        text-decoration: none;
+    }
+    .navButtons span {
+        color: #fff8e7aa;
+        /* background-image: url("projects/PN_head.jpg"); */
+        background-color: #202020;
+        border-style: groove;
+        border-color: #101010aa;
+        border-radius: 4px;
+        padding: 5px 5px;
+        margin-left: 5px;
+        font-size: small;
+    }
+    .navButtons span:hover {
+        background-color: #303030;
+    }
