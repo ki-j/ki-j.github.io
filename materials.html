@@ -8,16 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5SFL586YB"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-P5SFL586YB');
-    </script>
-
     <body>
         <main>
           <!-- side bar -->
@@ -44,35 +34,190 @@
               </div>
             </div>
 
-            <div class="cardContainer">
-              <a href="projects/masters/research-proj.html" style="text-decoration:none;">
-                <article class="card" style="height: 250px;">
-                  <img src="materials/physics.png" class="largePictures" id="y4research">
-                  <h3>Physics</h3>
-                </article>
-              </a>
-          
-              <a href="materials/astronomy.html" style="text-decoration:none;">
-                <article class="card" style="height: 250px;">
-                  <img src="materials/astro.png" class="largePictures" id="astrobio-article">
-                  <h3>Astronomy</h3>
-                </article>
-              </a>
+            <nav>
+              <ul>
+                <li><button onclick="astroText()" class="button astroButton">Astronomy</button></li>
+                <li><button onclick="physText()" class="button physicsButton">Physics</button></li>
+                <li><button onclick="mathsText()" class="button mathsButton">Maths</button></li>
+                <li><button onclick="chemText()" class="button chemButton">Chemistry</button></li>
+              </ul>
+            </nav>
 
-              <a href="projects/masters/aliens.html" style="text-decoration:none;">
-                <article class="card" style="height: 250px;">
-                  <img src="materials/maths.png" class="largePictures" id="astrobio-extended">
-                  <h3>Maths</h3>
-                </article>
-              </a>
-
-              <a href="projects/masters/pne.html" style="text-decoration:none;">
-                <article class="card" style="height: 250px;">
-                  <img src="materials/coding.png" class="largePictures" id="SPF-pne">
-                  <h3>Coding</h3>
-                </article>
-              </a>
+            <div style="text-align: center;" id="start-text"> <!-- click to get started text -->
+              <br>
+              <p><strong>Click on a button to get started!</strong></p>
+              <br>
             </div>
+
+            <!-- ASTRONOMY -->
+            <div id="astroDIV" style="display: none;"> <!-- astronomy text & links -->
+              <h2>Astronomy</h2>
+              <p>Astronomy is the study of the stars, planets, the Universe, and everything within it.
+                Simultaneously, it is both the oldest and newest science. 
+                For thousands of years, humankind has looked to the stars and pondered, charted, monitored, and gazed in awe. 
+                More recently, with the advent of modern technology, time itself has become something we can look through as we look ever deeper into the great expanse.
+              </p>
+
+              <figure>
+                <img src="projects/access-park.jpg" style="width: 85%; border-radius: 10px;" class="center" alt="image of the 2.5-m INT in La Palma (2023) before the reconstruction for the HARPS3 instrument.">
+                <figcaption style="font-size: smaller; font-weight: bold; text-align: center;">The 2.5-m Isaac Newton Telescope in La Palma (2023) has been used for decades to study the Universe.</figcaption>
+              </figure>
+
+              <p>
+                Astronomy is unlike other sciences, as physical experimentation is mostly impossible.
+                Instead, observational and theoretical studies dominate the field - where astronomers have developed ingenious ways of studying that which we may never touch.
+              </p>
+
+              <div style="width: 90%; border-radius: 10px; margin-left: 40px; padding: 10px 10px;">
+                <h3>Topics</h3>
+                <div class="row">
+                  <div class="column">
+                    <a style="text-decoration: none;">
+                      <div class="card astroCard">
+                        <h3>Basics</h3>
+                        <img src="materials/astronomy/basics/astronomy-basics-head.jpg" style="width: 100%;" alt="Image of the 2.54-m INT in La Palma" />
+                        <p style="text-align: center; color: #303030; font-size: smaller;">Properties of light | Magnitudes | Distances | Celestial motion | Thermal consinuum radiation | Thermal properties of matter | Astronomical spectroscopy | The atom | Line strength | Gravitational astrophysics | Masses</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="column">
+                    <a style="text-decoration: none;">
+                      <div class="card astroCard">
+                        <h3>Observing</h3>
+                        <img src="projects/int-head.jpg" style="width: 100%;" alt="Image of the 2.54-m INT in La Palma" />
+                        <p style="text-align: center; color: #303030; font-size: smaller;">Telescopes | Instruments | Detectors | Corrrections | Signal to noise</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PHYSICS -->
+            <div id="physDIV" style="display: none;"> <!-- physics text & links -->
+              <h2>Physics</h2>
+              <p>Physics is the study of the physical processes which occur in nature.
+                From Einstein to Feinmann to Hawking to Newton, physicists have helped to shape our understanding of the world around us. 
+              </p>
+
+              <div style="background-color: #00000020; width: 90%; border-radius: 10px; margin-left: 40px; padding: 10px 10px;">
+                <h3>Topics</h3>
+                <p style="text-align: center; font-weight: bold;">Topics will appear here soon!</p>
+              </div>
+            </div>
+
+            <!-- CHEMISTRY -->
+            <div id="chemDIV" style="display: none;"> <!-- chemistry text & links -->
+              <h2>Chemistry</h2>
+              <p>Chemistry is the study of matter.
+                Chemical reactions happen when different forms of matter interact.
+                The properties, structure and behaviours of different forms of matter are all studied in chemistry.
+              </p>
+
+              <div style="background-color: #00000020; width: 90%; border-radius: 10px; margin-left: 40px; padding: 10px 10px;">
+                <h3>Topics</h3>
+                <p style="text-align: center; font-weight: bold;">Topics will appear here soon!</p>
+              </div>
+            </div>
+
+            <!-- MATHS -->
+            <div id="mathsDIV" style="display: none;"> <!-- maths text & links -->
+              <h2>Maths</h2>
+              <p>Maths is used for pretty much anything.
+                From determining the value in currency of goods while shopping to formulating scientific theorems - maths is essential in our lives.
+                Maths was even worshipped by ancient Greeks such as Plato as the only perfect thing to exist.
+              </p>
+
+              <div style="background-color: #00000020; width: 90%; border-radius: 10px; margin-left: 40px; padding: 10px 10px;">
+                <h3>Topics</h3>
+                <h4 style="margin-left: 30px;">GCSE</h4>
+                <ul class="topicList">
+                  <a href="materials/maths.html/#maths-number" class="topicListItem"><li>Number</li></a>
+                  <a href="materials/maths.html/#maths-algebra" class="topicListItem"><li>Algebra</li></a>
+                  <a href="projects.html" class="topicListItem"><li>Ratio & proportion</li></a>
+                  <a href="projects.html" class="topicListItem"><li>Geometry</li></a>
+                  <a href="projects.html" class="topicListItem"><li>Probability & statistics</li></a>
+                </ul>
+              </div>
+            </div>
+
+            <script>
+              function astroText() {
+                var chem = document.getElementById("chemDIV");
+                var maths = document.getElementById("mathsDIV")
+                var phys = document.getElementById("physDIV");
+                var astro = document.getElementById("astroDIV");
+                var start = document.getElementById("start-text");
+                if (astro.style.display === "none") {
+                  astro.style.display = "block";
+                  chem.style.display = "none";
+                  phys.style.display = "none";
+                  maths.style.display = "none";
+                  start.style.display = "none";
+                } else {
+                  astro.style.display = "none";
+                }
+              }
+            </script>
+
+          <script>
+            function physText() {
+              var chem = document.getElementById("chemDIV");
+              var maths = document.getElementById("mathsDIV")
+              var phys = document.getElementById("physDIV");
+              var astro = document.getElementById("astroDIV");
+              var start = document.getElementById("start-text");
+              if (phys.style.display === "none") {
+                phys.style.display = "block";
+                chem.style.display = "none";
+                maths.style.display = "none";
+                astro.style.display = "none";
+                start.style.display = "none";
+              } else {
+                phys.style.display = "none";
+              }
+            }
+          </script>
+
+          <script>
+            function chemText() {
+              var chem = document.getElementById("chemDIV");
+              var maths = document.getElementById("mathsDIV")
+              var phys = document.getElementById("physDIV");
+              var astro = document.getElementById("astroDIV");
+              var start = document.getElementById("start-text");
+              if (chem.style.display === "none") {
+                chem.style.display = "block";
+                maths.style.display = "none";
+                phys.style.display = "none";
+                astro.style.display = "none";
+                start.style.display = "none";
+              } else {
+                chem.style.display = "none";
+              }
+            }
+          </script>
+
+          <script>
+            function mathsText() {
+              var chem = document.getElementById("chemDIV");
+              var maths = document.getElementById("mathsDIV")
+              var phys = document.getElementById("physDIV");
+              var astro = document.getElementById("astroDIV");
+              var start = document.getElementById("start-text");
+              if (maths.style.display === "none") {
+                maths.style.display = "block";
+                chem.style.display = "none";
+                phys.style.display = "none";
+                astro.style.display = "none";
+                start.style.display = "none";
+              } else {
+                maths.style.display = "none";
+              }
+            }
+          </script>
+
           </div>
         </main>
 
