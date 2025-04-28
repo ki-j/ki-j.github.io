@@ -34,9 +34,9 @@
               </div>
             </div>
 
-            <!-- contents menu (using circles) -->
+            <!-- contents menu -->
 
-            <nav>
+            <nav id="contents-menu-projects">
               <ul>
                 <li><a href="#masters-year"><button class="button projectButton">Master's year</button></a></li>
                 <li><a href="#la-palma"><button class="button projectButton">La Palma</button></a></li>
@@ -49,7 +49,11 @@
 
             <!-- MASTERS YEAR PROJECTS -->
             <hr>
-            <h2 id="masters-year">Masters year</h2>
+            <h2 id="masters-year">Masters year
+              <div class="navButtons" style="margin-right: 30px;">
+                <a href="#la-palma"><span>Next section</span></a>
+              </div>
+            </h2>
 
             <div class="row"> <!-- first row -->
               <div class="column">
@@ -158,23 +162,11 @@
 
             <!-- LA PALMA PROJECTS -->
             <h2 id="la-palma">La Palma
-              <svg width="40" height="40" style="margin-left: 80%;"> <!-- back to top button -->
-                **<a href="#top">**
-                  <circle cx="20"
-                          cy="20"
-                          r="20"
-                          fill="#202020" />
-              
-                  <text x="20"
-                        y="20"
-                        fill="#FFFFFF"
-                        text-anchor="middle"
-                        alignment-baseline="middle"
-                        style="font-size: 10pt;">
-                    Top
-                  </text>
-                **</a>**
-              </svg>
+              <div class="navButtons" style="margin-right: 30px;">
+                <a href="#fourth-year"><span>Previous section</span></a>
+                <a href="#contents-menu-projects"><span>To top</span></a>
+                <a href="#third-year"><span>Next section</span></a>
+              </div>
             </h2>
 
             <div class="row"> <!-- first row -->
@@ -218,23 +210,11 @@
 
             <!-- THIRD YEAR PROJECTS -->
             <h2 id="third-year">Third Year
-              <svg width="40" height="40" style="margin-left: 78%;">
-                **<a href="#top">**
-                  <circle cx="20"
-                          cy="20"
-                          r="20"
-                          fill="#202020" />
-              
-                  <text x="20"
-                        y="20"
-                        fill="#FFFFFF"
-                        text-anchor="middle"
-                        alignment-baseline="middle"
-                        style="font-size: 10pt;">
-                    Top
-                  </text>
-                **</a>**
-              </svg>
+              <div class="navButtons" style="margin-right: 30px;">
+                <a href="#la-palma"><span>Previous section</span></a>
+                <a href="#contents-menu-projects"><span>To top</span></a>
+                <a href="#second-year"><span>Next section</span></a>
+              </div>
             </h2>
 
             <div class="row"> <!-- first row -->
@@ -289,25 +269,13 @@
 
             <!-- SECOND YEAR PROJECTS -->
             <h2 id="second-year">Second Year
-              <svg width="40" height="40" style="margin-left: 74%;">
-                **<a href="#top">**
-                  <circle cx="20"
-                          cy="20"
-                          r="20"
-                          fill="#202020" />
-              
-                  <text x="20"
-                        y="20"
-                        fill="#FFFFFF"
-                        text-anchor="middle"
-                        alignment-baseline="middle"
-                        style="font-size: 10pt;">
-                    Top
-                  </text>
-                **</a>**
-              </svg>
+              <div class="navButtons" style="margin-right: 30px;">
+                <a href="#third-year"><span>Previous section</span></a>
+                <a href="#contents-menu-projects"><span>To top</span></a>
+                <a href="#first-year"><span>Next section</span></a>
+              </div>
             </h2>
-
+            
             <div class="row"> <!-- first row -->
               <div class="column">
                 <a href="projects/masters/coming-soon.html" style="text-decoration:none;">
@@ -361,23 +329,11 @@
 
             <!-- FIRST YEAR PROJECTS -->
             <h2 id="first-year">First Year
-              <svg width="40" height="40" style="margin-left: 79%;">
-                **<a href="#top">**
-                  <circle cx="20"
-                          cy="20"
-                          r="20"
-                          fill="#202020" />
-              
-                  <text x="20"
-                        y="20"
-                        fill="#FFFFFF"
-                        text-anchor="middle"
-                        alignment-baseline="middle"
-                        style="font-size: 10pt;">
-                    Top
-                  </text>
-                **</a>**
-              </svg>
+              <div class="navButtons" style="margin-right: 30px;">
+                <a href="#second-year"><span>Previous section</span></a>
+                <a href="#contents-menu-projects"><span>To top</span></a>
+                <a href="#foundation-year"><span>Next section</span></a>
+              </div>
             </h2>
 
             <div class="row"> <!-- first row -->
@@ -398,31 +354,18 @@
 
             <!-- FOUNDATION YEAR PROJECTS -->
             <h2 id="foundation-year">Foundation Year
-              <svg width="40" height="40" style="margin-left: 68%;">
-                **<a href="#top">**
-                  <circle cx="20"
-                          cy="20"
-                          r="20"
-                          fill="#202020" />
-              
-                  <text x="20"
-                        y="20"
-                        fill="#FFFFFF"
-                        text-anchor="middle"
-                        alignment-baseline="middle"
-                        style="font-size: 10pt;">
-                    Top
-                  </text>
-                **</a>**
-              </svg>
+              <div class="navButtons" style="margin-right: 30px;">
+                <a href="#first-year"><span>Previous section</span></a>
+                <a href="#contents-menu-projects"><span>To top</span></a>
+              </div>
             </h2>
-
+              
             <div class="row"> <!-- first row -->
               <div class="column">
                 <a href="projects/masters/coming-soon.html" style="text-decoration:none;">
                   <div class="card">
                     <h3>Rocket fuel</h3>
-                    <img src="projects/rosa2.jpg" style="width: 100%;" id="127-observing-proposal">
+                    <img src="projects/rocket.jpeg" style="width: 100%;" id="127-observing-proposal">
                     <p><b>A comparison of potential rocket fuels for future missions to Mars</b></p>
                     <p style="font-size: smaller;">A report comparing RP-1 and a newer form of hydrogen-based fuel by their usefulness in potential future missions to Mars.
                     </p>
