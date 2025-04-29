@@ -8,16 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5SFL586YB"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-P5SFL586YB');
-    </script>
-
     <body>
         <main>
           <!-- side bar -->
@@ -46,73 +36,121 @@
 
             <p>
               This page contains two versions of a CV, one focusing on academic work and proficiencies and the other with more emphasis on casual work experience.
+              Please click one of the buttons below to view a CV.
             </p>
 
             <nav>
               <ul>
-                <li><svg width="120" height="120"> <!-- style="margin-left: 25%;"> -->
-                  **<a href="cvs/ac_cv.html">**
-                    <circle cx="60"
-                            cy="60"
-                            r="60"
-                            fill="#003530"
-                            class="cvCircle" />
-                
-                    <text x="60"
-                          y="60"
-                          fill="#FFFFFF"
-                          text-anchor="middle"
-                          alignment-baseline="middle"
-                          style="font-size: 10pt;">
-                      Academic CV
-                    </text>
-                  **</a>**
-                </svg></li>
-
-                <li><svg width="120" height="120"> <!-- style="margin-left: 25%;"> -->
-                  **<a href="cvs/gen_cv.html">**
-                    <circle cx="60"
-                            cy="60"
-                            r="60"
-                            fill="#003530"
-                            class="cvCircle" />
-                
-                    <text x="60"
-                          y="60"
-                          fill="#FFFFFF"
-                          text-anchor="middle"
-                          alignment-baseline="middle"
-                          style="font-size: 10pt;">
-                      General CV
-                    </text>
-                  **</a>**
-                </svg></li>
+                <li><a href="#academicCV"><button onclick="showAcademic()" class="button acCVButton">Academic CV</button></a></li>
+                <li><a gref="#generalCV"><button onclick="showGeneral()" class="button genCVButton">General CV</button></a></li>
               </ul>
             </nav>
 
-            <!-- <div class="cardContainer">
-                <a href="cvs/ac_cv.html" style="text-decoration:none;">
-                  <article class="card">
-                    <img src="cvs/ac_cv.png" class="mediumPictures" id="parksSetup">
-                    <h3>Academic CV</h3>
-                    <p>
-                      This CV contains information on education and key projects from university and recent work.
-                      Projects include third and fourth year research work.
-                    </p>
-                  </article>
-                </a>
-                
-                <a href="cvs/gen_cv.html" style="text-decoration:none;">
-                  <article class="card">
-                    <img src="cvs/gen_cv.png" class="mediumPictures" id="notesSetup">
-                    <h3>General CV</h3>
-                    <p>
-                      This CV contains basic information on education, with more emphasis on casual work experience. 
-                      Casual work experience includes customer service, hospitality, retail and sports coaching.
-                    </p>
-                  </article>
-                </a>
-            </div> -->
+            <!-- script to display CV choice on page -->
+            <script>
+              function showAcademic() {
+                var ac = document.getElementById("academicCV");
+                var gen = document.getElementById("generalCV")
+                if (ac.style.display === "none") {
+                  ac.style.display = "block";
+                  gen.style.display = "none";
+                }
+              }
+            </script>
+
+            <script>
+              function showGeneral() {
+                var ac = document.getElementById("academicCV");
+                var gen = document.getElementById("generalCV")
+                if (gen.style.display === "none") {
+                  gen.style.display = "block";
+                  ac.style.display = "none";
+                }
+              }
+            </script>
+
+            <!-- Academic CV -->
+            <div id="academicCV" style="display: none;">
+              <h2>Academic CV</h2>
+              <!-- personal statement -->
+              <p>
+                I am a reliable and adaptable Physics and Astronomy master’s graduate from the University of Sheffield, with particular interests and experience in close binary systems and observational astronomy. 
+                I have previous work experience with the Isaac Newton group of Telescopes (ING) at the Observatorio de Roque de los Muchachos in La Palma and am currently working as a freelance planetarium presenter. 
+                I am eager to establish myself in a challenging, dynamic workplace which offers opportunity for professional growth.
+              </p>
+
+              <!-- research interests -->
+              <p>
+                <details style="margin-left: 30px;">
+                  <summary>Research Interests</summary>
+                  <ul>
+                    <li>Exoplanetary systems</li>
+                    <li>Telescopes and instrumentation</li>
+                    <li>Close / white dwarf binary star systems</li>
+                    <li>Observational astronomy</li>
+                    <li>Cataclysmic variable stars (CVs)</li>
+                    <li>Binary dynamics</li>
+                  </ul>
+                </details>
+              </p>
+
+              <h2>Education and Projects</h2>
+              <h3>Education</h3>
+              <details style="margin-left: 2.5%;">
+                <summary>
+                  <b>MPhys intergrated master's in Physics and Astronomy with a year in industry</b><br><br>
+                  <i>Department of Physics and Astronomy</i>, University of Sheffield | 2019 - 2024
+                </summary>
+                <p>
+                  <ul>
+                    <li>Earned a 2.1 grade overall</li>
+                    <li>Completed modules such as astrobiology, nuclear astrophysics, stellar atmospheres and stellar interiors, observational astronomy, photometry and spectroscopy</li>
+                    <li>Worked on multiple research projects including photometry of an eclipsing CV, radial velocity measurements of an eclipsing CV, testing a detector for Parkinson's disease, determining the amount of nickel in a supernova, determining the age of a star cluster, and characterising a HII region</li>
+                  </ul>
+                </p>
+              </details>
+              <br>
+
+              <details style="margin-left: 2.5%;">
+                <summary>
+                  <b>Engineering Foundation year for physics</b><br><br>
+                  <i>Department of Engineering</i>, University of Sheffield | 2018 - 2019
+                </summary>
+                <p>
+                  <ul>
+                    <li>Foundational course covering physics, maths, chemistry, labs and data skills</li>
+                    <li>The course also covered further mathematics, report writing and group and individual project work</li>
+                  </ul>
+                </p>
+              </details>
+              <br>
+
+              <details style="margin-left: 2.5%;">
+                <summary>
+                  <b>GCSEs and A-Levels</b><br><br>
+                  Tudor Grange Academy & Sixth Form
+                </summary>
+                <p>
+                  <ul>
+                    <li>Total of 13 GCSEs obtained including english, maths and the sciences</li>
+                    <li>A-Levels in physics, maths and chemistry</li>
+                  </ul>
+                </p>
+              </details>
+
+              <h3>Projects</h3>
+              <p>
+                Visit the <a href="../projects.html">projects page</a>.
+              </p>
+
+              <embed src="../CV_academic.pdf" class="pdf" type="application/pdf">
+            </div>
+
+            <!-- general CV -->
+            <div id="generalCV" style="display: none;">
+              <h2>General CV</h2>
+              <embed src="../CV_general.pdf" class="pdf" type="application/pdf">
+            </div>
 
           </div>
         </main>
