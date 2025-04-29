@@ -24,19 +24,22 @@ body {
 h1 {
     font-family: "Lato", sans-serif;
     font-size: 40pt;
-    color: #003022;
+    color: #002010;
+    /* color: #001020; */
     text-align: center;
 }
 
 h2 {
     font-family: "Lato", sans-serif;
-    color: #003022dd;
+    color: #003022;
+    /* color: #002060; */
     font-size: 26pt;
 }
 
 h3 {
     font-family: "Lato", sans-serif;
-    color: #007060dd;
+    color: #004020;
+    /* color: #204090; */
     font-size: 15pt;
     text-align: left;
 }
@@ -289,6 +292,11 @@ footer {
     .astroCard {
         /* background: linear-gradient(180deg, #401040 0px, #401040 65px, white 65px, white 100%); */
         background: linear-gradient(180deg, #601010 0px, #601010 65px, white 65px, white 100%);
+        height: 365px;
+    }
+    .mathsCard {
+        /* background: linear-gradient(180deg, #401040 0px, #401040 65px, white 65px, white 100%); */
+        background: linear-gradient(180deg, #101060 0px, #101060 65px, white 65px, white 100%);
         height: 365px;
     }
 
@@ -604,13 +612,14 @@ a:hover circle {
     border: none;
     color: #ffffff;
 
+    /* padding: 35px 70px; */
     padding: 15px 32px;
     border-radius: 10px;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 
     display: inline-block;
     margin: 4px 2px;
@@ -628,6 +637,9 @@ a:hover circle {
     .astroButton {
         background-image: url("projects/PN_head.jpg");
         color: #fff8e7dd;
+        width: 100%;
+        padding: 35px 60px;
+        border-style: groove;
     }
 
         .astroButton:hover {
@@ -637,6 +649,9 @@ a:hover circle {
     .physicsButton {
         background-image: url("projects/rocket.jpeg");
         color: #fff8e7dd;
+        width: 100%;
+        padding: 35px 60px;
+        border-style: groove;
     }
     
         .physicsButton:hover {
@@ -646,6 +661,9 @@ a:hover circle {
     .mathsButton {
         background-image: url("projects/consciousness.jpeg");
         color: #fff8e7dd;
+        width: 100%;
+        padding: 35px 60px;
+        border-style: groove;
     }
     
         .mathsButton:hover {
@@ -653,8 +671,11 @@ a:hover circle {
         }
 
 .chemButton {
-        background-image: url("projects/egypt-head.jpg");
+        background-image: url("projects/chembutton2.png");
         color: #fff8e7dd;
+        width: 100%;
+        padding: 35px 60px;
+        border-style: groove;
         }
     
         .chemButton:hover {
@@ -774,7 +795,7 @@ a:hover circle {
             color: #000;
         } */
 
- .astroSection {
+ .materialSection {
     width: 90%;
     border-radius: 10px;
     padding: 10px 10px;
@@ -782,20 +803,20 @@ a:hover circle {
     background-color: #fff8e7aa;
     font-size: medium;
 }
-    .astroSection h2 {
+    .materialSection h2 {
         color: #000;
     }
-    .astroSection h4 {
+    .materialSection h4 {
         color: #001030;
         margin-left: 30px;
     }
-    .astroSection p {
+    .materialSection p {
         color: #252525;
     }
-    .astroSection figure figcaption{
+    .materialSection figure figcaption{
         color: #250025;
     }
-    .astroSection .equation {
+    .materialSection .equation {
         text-align: center; 
         color: #fff8e7aa; 
         font-style: italic; 
@@ -804,25 +825,25 @@ a:hover circle {
         padding: 10px 10px; 
         border-radius: 5px;
     }
-        .astroSection span.bottom {
+        .materialSection span.bottom {
             border-top: #fff8e7aa;
         }
-    .astroSectionDetail {
+    .materialSectionDetail {
         background-color: #001020;
         border-radius: 10px;
         width: 90%;
         padding: 10px 10px;
     }
-        .astroSectionDetail h4 {
+        .materialSectionDetail h4 {
             color: #fff8e7;            
         }
-        .astroSectionDetail p {
+        .materialSectionDetail p {
             color: #fff8e7cc;
         }
-        .astroSectionDetail figure figcaption{
+        .materialSectionDetail figure figcaption{
             color: #90ddff;
         }
-        .astroSectionDetail .equation {
+        .materialSectionDetail .equation {
             text-align: center; 
             color: #001020aa; 
             font-style: italic; 
@@ -831,7 +852,7 @@ a:hover circle {
             padding: 10px 10px; 
             border-radius: 5px;
         }
-            .astroSectionDetail span.bottom {
+            .materialSectionDetail span.bottom {
                 border-top: #001020aa;
             }
 
@@ -878,3 +899,20 @@ a:hover circle {
     .navButtons span:hover {
         background-color: #303030;
     }
+
+/* toggles */
+details > summary {
+    width: fit-content;
+    padding: 10px 10px;
+    background-color: #ffffffaa;
+    box-shadow: 4px 4px 4px #00000050;
+    border: none;
+    cursor: none;
+  }
+  
+  details > p {
+    background-color: #eeeeee;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }
