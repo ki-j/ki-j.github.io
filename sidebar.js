@@ -1,6 +1,6 @@
 let sidebarHTML = `
     <div class="sidenav">
-        <img src="C:/Users/ksj557/OneDrive - University of Birmingham/Website/sex1.png" alt="Me during an observing night at the Observatorio de Roque de los Muchachos in La Palma." style="margin-left: 10%; width: 75%; justify-content: center;"><br>
+        <img src="https://github.com/ki-j/ki-j.github.io/blob/main/sex1.png" alt="Me during an observing night at the Observatorio de Roque de los Muchachos in La Palma." style="margin-left: 10%; width: 75%; justify-content: center;"><br>
         <br>
         <a href="index.html">About</a>
         <a href="projects.html">Projects</a>
@@ -15,4 +15,5 @@ let sidebarHTML = `
         <li><a href="cvs/CV_academic.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-lg" style="color:#fcc367"></i>&emsp;<b>CV</b></a></li>
     </div>
 `;
+
 document.write(sidebarHTML);
