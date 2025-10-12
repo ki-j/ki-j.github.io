@@ -1,18 +1,21 @@
 /* BACKGROUND */
 html {
-    background-color: #fff8e7;
+    /* background-color: #fff8e7; */
+    background-color: #ffffff;
 }
 
 /* HEAD */
 head {
-    background-color: #fff8e7;
+    /* background-color: #fff8e7; */
+    background-color: #ffffff;
 }
 
 /* MAIN BODY */
 /* -------------------------------------------------------------- */
 body {
     color: #000000cc;
-    background-color: #fff8e7;
+    /* background-color: #fff8e7; */
+    background-color: #ffffff;
     font-size: 15pt;
     font-family: "Lato", sans-serif;
     max-width: 100%;
@@ -31,14 +34,15 @@ h1 {
 
 h2 {
     font-family: "Lato", sans-serif;
-    color: #003022;
+    /* color: #003022; */
     /* color: #002060; */
+    color: #001030;
     font-size: 26pt;
 }
 
 h3 {
     font-family: "Lato", sans-serif;
-    color: #004020;
+    color: #203050;
     /* color: #204090; */
     font-size: 15pt;
     text-align: left;
@@ -50,6 +54,15 @@ h3 {
     h2 {font-size: 13pt;}
     h3 {font-size: 11pt;}
 }
+
+p a {
+   color: #ae2bae; 
+   text-decoration: none;   
+}
+    p a:hover {
+        color: #002040;
+        text-decoration: none;
+    }
 
 nav ul {
     padding-left: 10px;
@@ -195,15 +208,15 @@ footer {
   }
 
     .main p {
-        padding: 0px 30px;
+        padding: 0 5%;
     }
 
     .main h2 {
-        padding: 0px 30px;
+        padding: 0 5%;
     }
 
     .main h3 {
-        padding: 0px 30px;
+        padding: 0 5%;
         text-align: left;
     }
 
@@ -221,15 +234,18 @@ footer {
                 .main nav li a:hover {
                     color: #003022;
                 }
+    .main .cardContainer {
+        padding: 10px 10px;
+        margin-left: 5%;}
 
-    .main p a {
+    /* .main p a {
         color: #903090;
         text-decoration: none;
     }
 
         .main p a:hover {
             color: #003022;
-        }
+        } */
   
   /* On smaller screens, where width is less than 1500px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-width: 500px) {
@@ -247,6 +263,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px 10px;
+    max-width: 90%;
+    margin-left: 5%;
   }
 
 /* Float four columns side by side */
@@ -257,7 +275,7 @@ footer {
   }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {margin: 0 5%;}
 
 /* Clear floats after the columns */
 .row:after {
@@ -615,6 +633,7 @@ a:hover circle {
     /* padding: 35px 70px; */
     padding: 15px 32px;
     border-radius: 10px;
+    width: fit-content;
 
     text-align: center;
     text-decoration: none;
@@ -727,11 +746,11 @@ a:hover circle {
     /* width:fit-content; */
     border-radius: 10px;
     padding: 10px 10px;
-
     list-style-type: none; 
     text-align: left; 
     font-size: small;
-    background-color: #fae8bedd;
+    /* background-color: #fae8bedd; */
+    background-color: #101020;
     text-decoration: none;
     overflow: hidden;
 }
@@ -742,10 +761,13 @@ a:hover circle {
         float: left;
         display: block;
         border-radius: 2px;
-        padding: 4px 4px;
+        padding: 6px 6px;
         margin: 5px 5px;
-        border: #300530;
-        border-style: solid;
+        /* border: #300530; */
+        border: none;
+        border-radius: 5px;
+        /* border-style: solid; */
+        background-color: #fff8e7aa;
     }
         .materialsContents li a:hover {
             color: #751575;
@@ -838,7 +860,7 @@ a:hover circle {
     }
     .materialSection .equation {
         text-align: center; 
-        color: #fff8e7aa; 
+        color: #fff8e7cc; 
         font-style: italic; 
         font-weight: bold; 
         background-color: #001020aa; 
@@ -936,3 +958,42 @@ details > summary {
     margin: 0;
     box-shadow: 1px 1px 2px #bbbbbb;
   }
+
+.placeLink {
+    font-size: small; 
+    color: #505050;
+    text-decoration: none;
+    float: left;
+}
+    .placeLink:hover {
+        color: #101010;
+    }
+
+#left-element{
+     float:left;
+}
+#right-element{
+     float:right;
+}
+
+/* for creating an image gallery */
+* {
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.column {
+  float: center;
+  width: 20%;
+  padding: 5px;
+}
+
+.row::after { /* Clearfix (clear floats) */
+  content: "";
+  clear: both;
+  display: table;
+}
