@@ -11,20 +11,7 @@
     <body>
         <main>
           <!-- side bar -->
-          <div class="sidenav">
-            <img src="sex1.png" alt="Me during an observing night at the Observatorio de Roque de los Muchachos in La Palma." style="margin-left: 10%; width: 75%; justify-content: center;"><br>
-            <br>
-            <span>About</span>
-            <a href="projects.html">Projects</a>
-            <a href="employment.html">Employment</a>
-            <a href="cv.html">CV</a>
-            <a href="materials.html">Materials</a>
-            <br>
-            <li><a href="mailto:kiran.jhass@googlemail.com"><i class="fa fa-envelope fa" style="color:#fcc367"></i>&emsp;<b>kiran.jhass@googlemail.com</b></a></li>
-            <li><a><i class="fa fa-mobile fa-lg" style="color:#fcc367"></i>&emsp;<b>07538783747</b></a></li>
-            <li><a href="https://www.linkedin.com/in/kiran-jhass-8267b01ba/"><i class="fa fa-linkedin fa-lg" style="color:#fcc367"></i>&emsp;<b>Kiran Jhass</b></a></li>
-            <li><a href="https://orcid.org/0009-0007-5240-6861"><i style="color:#fcc367"><b>ORCiD</b></i>&emsp;<b>0009-0007-5240-6861</b></a></li>
-          </div>
+          <script src="sidebar.js"></script>
           
           <!-- Page content -->
           <div class="main">
@@ -35,40 +22,94 @@
               </div>
             </div>
 
-            <p id="openingGreeting"></p>
+            <h3 style="color:black; text-align: center; margin-right: 5%;" id="openingGreeting"></h3>
             <!-- script to change the opening greeting based on the time -->
             <script>
               const time = new Date().getHours();
               let greeting;
-              if (time < 12) {
-                greeting = "Good morning!";
-              } else if (time < 20) {
-                greeting = "Good afternoon!";
+              if (time < 6) {
+                greeting = "Up observing? Why are you here?";
+              } else if (time < 12) {
+                greeting = "Good morning and welcome!";
+              } else if (time < 19) {
+                greeting = "Good afternoon and welcome!";
+              } else if (time > 22) {
+                greeting = "Up observing? Why are you here?"
               } else {
-                greeting = "Good evening!";
+                greeting = "Good evening! Clear skies ahead!";
               }
               document.getElementById("openingGreeting").innerHTML = greeting;
             </script>
-
-            <p>
-              Welcome to my portfolio!
-              This is a collection of my project work and employment history.
+            
+            <p style="text-align: center; margin-left: 5%; margin-right: 5%;">
+              Hey, I'm Kiran and I am currently a PhD student at the University of Birmingham.
+              I run a lot, play cricket, love football, and make the saxophone sound like a kazoo.
             </p>
+            
+            <div class="cardContainer">
+              <div style="width: 23%; padding: 0px 0px; border-style: solid; border-color: black; background-color: #ededff; border-radius: 20px; margin-left: 5%; margin-right: 5%; font-size: small; color: black; box-shadow: 10px 10px 15px #00000090;">
+                <p>
+                  <span style="font-size: larger; font-weight: bold; padding-bottom: 4pt;">PhD student</span><br>
+                  <span style="font-size: small; font-weight: bold; color: #002040;">September 2025 - Present</span><br>
+                  <a href="https://www.birmingham.ac.uk/research/centres-institutes/research-in-physics-and-astronomy/astronomy-and-experimental-gravity/sun-stars-and-exoplanets" class="placeLink" style="clear: both; padding-bottom: 12pt;">Sun, stars, and exoplanets group, University of Birmingham</a><br><br>
 
+                  <p>
+                  In September 2025 I joined the SSE group as part of the team working on ABORAS - a Solar input for the HARPS3 instrument on the 2.5 m Isaac Newton Telescope.
+                  ABORAS will improve our understanding of stellar variability and serve as a benchmark for the detection of Earth-sized exoplanets.<br><br>
+
+                  <a class="placeLink" href="projects/ABORAS/ABORAS.html">See more...</a><br>
+                  </p>
+                </p>
+              </div>
+
+              <div style="width: 23%; padding: 0px 0px; border-style: solid; border-color: black; background-color: #ededff; border-radius: 20px; margin-left: 5%; margin-right: 5%; font-size: small; color: black; box-shadow: 10px 10px 15px #00000090;">
+                <p>
+                  <span style="font-size: larger; font-weight: bold; padding-bottom: 4pt;">Planetarium Presenter</span><br>
+                  <span style="font-size: small; font-weight: bold; color: #002040;">September 2024 - June 2025</span><br>
+                  <a href="https://immersive-experiences.co.uk/" class="placeLink" style="clear: both; padding-bottom: 12pt;">Immersive Experiences Planetarium Domes Ltd</a><br><br>
+
+                  <p>
+                  I spent one year working as a planetarium presenter for a global mobile planetarium company.
+                  As a presenter, I travelled the country, delivering tailored talked to a diverse and varied range of audiences - from reception classes, to university open days, to events such as New Scientist Live.<br><br>
+                  <a class="placeLink" href="https://immersive-experiences.co.uk/">See more...</a><br>
+                  </p>
+                </p>
+              </div>
+
+              <div style="width: 23%; padding: 0px 0px; border-style: solid; border-color: black; background-color: #ededff; border-radius: 20px; margin-left: 5%; margin-right: 5%; font-size: small; color: black; box-shadow: 10px 10px 15px #00000090;">
+                <p>
+                  <span style="font-size: larger; font-weight: bold; padding-bottom: 4pt;">Support Astronomer</span><br>
+                  <span style="font-size: small; font-weight: bold; color: #002040;">January 2023 - September 2023</span><br>
+                  <a href="https://www.birmingham.ac.uk/research/centres-institutes/research-in-physics-and-astronomy/astronomy-and-experimental-gravity/sun-stars-and-exoplanets" class="placeLink" style="clear: both; padding-bottom: 12pt;">Isaac Newton Group of Telescopes, La Palma</a><br><br>
+
+                  <p>
+                  I worked as a support astronomer for the ING at the Observatorio de Roque de los Muchachos in La Palma.
+                  In this role, I was responsible for training visiting observers to use the 2.5-m Isaac Newton Telescope, as well as performing service observations and setting up its two instruments.<br><br>
+                  <a class="placeLink" href="projects/ING/support_astronomy.html">See more...</a><br>
+                  </p>
+                </p>
+              </div>
+            </div>
+
+            <h2>About me</h2>
+            <h3>Overview</h3>
             <p>
-              In September 2025, I will begin my PhD at the <a href="https://www.birmingham.ac.uk/">University of Birmingham</a> where I will work on the ABORAS (A dual-Beam pOlarimetric Robotic Aperture for the Sun) project.
-              This will serve as a dedicated Solar input for the HARPS3 instrument which was installed on the <a href="https://www.ing.iac.es/Astronomy/telescopes/int/">2.5-m Isaac Newton Telescope</a> in La Palma in April 2024.
+              In September 2025, I began my PhD at the <a href="https://www.birmingham.ac.uk/">University of Birmingham</a> where I am working on <a href="projects/ABORAS/ABORAS.html">ABORAS</a> (A dual-Beam pOlarimetric Robotic Aperture for the Sun).
+              This will serve as a dedicated Solar input for the HARPS3 instrument which will be installed on the <a href="https://www.ing.iac.es/Astronomy/telescopes/int/">2.5-m Isaac Newton Telescope</a> in La Palma.
               ABORAS will help to improve our understanding of stellar variability, track the long-term stability of HARPS3, and serve as a benchmark for the detection of Earth-sized exoplanets around sunlike stars.
             </p>
 
+            <img src="index-ims/ABORAS-test-1.jpg" style="width: 90%; border-radius: 10px;" class="center" />
+
             <p>
-              I graduated from the <a href="https://www.sheffield.ac.uk/">University of Sheffield</a> with a masters degree in physics and astronomy in July 2024. 
+              I graduated from the <a href="https://www.sheffield.ac.uk/">University of Sheffield</a> with a Master's degree in Physics and Astronomy in July 2024. 
               In 2023, I worked as a support astronomer at the <a href="https://www.ing.iac.es/">Isaac Newton Group of Telescopes (ING)</a> in La Palma.
-              I currently work as a planetarium presenter for <a href="https://www.immersive-experiences.co.uk/">Immersive Experiences</a>, where I travel across the UK delivering a variety of presentations to a diverse range of audiences.
+              From 2024 - 25 I worked as a planetarium presenter for <a href="https://www.immersive-experiences.co.uk/">Immersive Experiences</a>, where I travelled across the UK delivering a variety of presentations to a diverse range of audiences.
             </p>
 
             <img src="employment/10m-dome.jpg" style="width: 90%; border-radius: 10px;" class="center" />
 
+            <h3>Undergraduate work</h3>
             <p>
               In my third and fourth years, my researched focused mainly on a type of interacting binary star called cataclysmic variables (CVs). 
               My third year research involved taking photometric observations of the CV V1315 Aquilae with the 0.5-m <i>pt5m</i> telescope in La Palma. 
@@ -92,14 +133,7 @@
         </main>
 
         <footer>
-          <nav>
-            <ul>
-              <li><i class="fa fa-envelope fa" style="color:#fcc367"></i>&emsp;<b>kiran.jhass@googlemail.com</b></li>
-              <li><i class="fa fa-mobile fa-lg" style="color:#fcc367"></i>&emsp;<b>07538783747</b></li>
-              <li><i class="fa fa-linkedin fa-lg" style="color:#fcc367"></i>&emsp;<b>Kiran Jhass</b></li>
-              <li><i style="color:#fcc367"><b>ORCiD</b></i>&emsp;<b>0009-0007-5240-6861</b></li>
-            </ul>
-          </nav>
+          <script src="footbar.js"></script>
         </footer>
     </body>
 </html>
