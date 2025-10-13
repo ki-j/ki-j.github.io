@@ -2,11 +2,11 @@ let sidebarHTML = `
     <div class="sidenav">
         <img src="ki-j.github.io/sex1.png" alt="Me during an observing night at the Observatorio de Roque de los Muchachos in La Palma." style="margin-left: 10%; width: 75%; justify-content: center;"><br>
         <br>
-        <a href="https://github.com/ki-j/ki-j.github.io/blob/main/index.html">About</a>
-        <a href="https://github.com/ki-j/ki-j.github.io/blob/main/projects.html">Projects</a>
-        <a href="https://github.com/ki-j/ki-j.github.io/blob/main/employment.html">Employment</a>
+        <a href="ki-j.github.io/index.html">About</a>
+        <a href="ki-j.github.io/projects.html">Projects</a>
+        <a href="ki-j/ki-j.github.io/employment.html">Employment</a>
         <!-- <a href="cv.html">CV</a> -->
-        <a href="https://github.com/ki-j/ki-j.github.io/blob/main/materials.html">Materials</a>
+        <a href="ki-j.github.io/materials.html">Materials</a>
         <br>
         <a style="font-size: small; color: #fff8e7;"><b>Contact Me</b></a>
         <li><a href="mailto:ksj557@student.bham.ac.uk"><i class="fa fa-envelope fa" style="color:#fcc367"></i>&emsp;<b>ksj557.student.bham.ac.uk</b></a></li>
@@ -17,5 +17,6 @@ let sidebarHTML = `
 `;
 
 document.write(sidebarHTML);
+
 
 
