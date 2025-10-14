@@ -27,7 +27,7 @@
           </div>
           
           <!-- Page content -->
-          <div class="main" style="background-image: url(astronomy-background.png); background-size: 100%;">
+          <div class="main"> <!-- style="background-image: url(astronomy-background.png); background-size: 100%;"> -->
             <div class="back-image-proj">
               <div class="back-text">
                 <h1 style="font-size:50px; color: #fff8e7aa;" id="top">Astronomy basics</h1>
@@ -36,7 +36,7 @@
 
             <div class="center" style="width: 70%;" id="contents">
               <ul class="materialsContents" style="justify-content: space-around;">
-                <li style="font-size: medium; margin-left: 6px;"><b>Contents</b></li>
+                <li style="font-size: medium; margin-left: 6px; color: #fff8e7;"><b>Contents</b></li>
                 <br>
                 <li><a href="#properties-of-light">Properties of light</a></li>
                 <li><a href="#magnitudes">Magnitudes</a></li>
@@ -54,7 +54,7 @@
 
 
             <!-- PROPERTIES OF LIGHT -->
-            <div class="astroSection" id="properties-of-light">
+            <div class="materialSection" id="properties-of-light">
 
               <!-- navigation -->
               <div class="navButtons">
@@ -97,7 +97,7 @@
                 Here, we will investigate the nature of light and demonstrate both its wave-like and particle-like behaviour.
               </p>
 
-              <div class="astroSectionDetail center">
+              <div class="materialSectionDetail center">
                 <!-- light as a wave -->
                 <h4 id="light-as-a-wave">Light as a wave</h4> <!-- lIGHT AS A WAVE -->
                 <p>
@@ -204,7 +204,7 @@
               </p>
 
               <!-- wave-particle duality -->
-              <div class="astroSectionDetail center">
+              <div class="materialSectionDetail center">
                 <h4 id="wave-particle-duality">Wave-particle duality</h4> <!-- WAVE-PARTICLE DUALITY -->
                 <p>
                   We have demonstrated that light behaves as a wave in <span class="important">Young's double slit experiment</span>, and as a particle in the <span class="important">photoelectric effect</span>. 
@@ -256,7 +256,7 @@
                 </figcaption>
               </figure>
 
-              <div class="astroSectionDetail center">
+              <div class="materialSectionDetail center">
                 <!-- scale of the electromagnetic spectrum -->
                 <h4 id="scale-of-the-electromagnetic-spectrum">Scale of the electromagnetic spectrum</h4> <!-- SCALE OF THE ELECTROMAGNETIC SPECTRUM -->
                 <p>
@@ -310,7 +310,7 @@
               </p>
 
               <!-- wavelength units -->
-              <div class="astroSectionDetail center">
+              <div class="materialSectionDetail center">
                 <h4 id="wavelength-units">Wavelength units</h4> <!-- WAVELENGTH UNITS -->
                 <p>
                   Wavelength and frequency are linked, as they are two ways of measuring the same property of a wave.
@@ -378,7 +378,7 @@
             <br>
 
             <!-- MAGNITUDES -->
-            <div class="astroSection" id="magnitudes">
+            <div class="materialSection" id="magnitudes">
               <!-- navigation -->
               <div class="navButtons">
                 <a href="#properties-of-light"><span>Previous section</span></a>
@@ -462,7 +462,7 @@
               </figure>
 
               <!-- calculating fluxes and magnitudes -->
-              <div class="astroSectionDetail center">
+              <div class="materialSectionDetail center">
                 <h4 id="calculating-fluxes-and-magnitudes-with-photometry">Calculating fluxes and magnitudes with photometry</h4>
                 <p>
                   In practise, filters are placed on cameras on telescopes with some collection area <b><i>&Delta;A</i></b> and exposed to light for time <b><i>&Delta;t</i></b>.
@@ -565,13 +565,13 @@
             <br>
 
             <!-- DISTANCES -->   
-            <div class="astroSection" id="distances">
+            <div class="materialSection" id="distances">
 
               <!-- navigation -->
               <div class="navButtons">
                 <a href="#magnitudes"><span>Previous section</span></a>
                 <a href="#contents"><span>To top</span></a>
-                <a href="#distances"><span>Next section</span></a>
+                <a href="#celestial-motion"><span>Next section</span></a>
               </div>
 
               <h2>Astronomical distances</h2>
@@ -608,7 +608,7 @@
               </p>
 
               <!-- the earth as a pair of eyes -->
-              <div class="astroSectionDetail center">
+              <div class="materialSectionDetail center">
                 <h4 id="the-earth-as-a-pair-of-eyes">The Earth as a pair of eyes</h4>
                 <p>
                   So how do astronomers turn the Earth into a pair of eyes?
@@ -701,7 +701,7 @@
                 In the ocean of space, the equivalent to a buoy is a <span class="important">standard candle</span>. 
               </p>
 
-              <div class="astroSectionDetail center" id="standard-candles">
+              <div class="materialSectionDetail center" id="standard-candles">
                 <h4>Standard candles</h4>
                 <p>
                   Standard candles are objects which we accuratly know the luminosity of.
@@ -758,6 +758,38 @@
               </p>
 
             </div> <!-- this is the distances page -->
+            <br>
+
+            <div class="materialSection" id="celestial-motion">
+              <!-- navigation -->
+              <div class="navButtons">
+                <a href="#distances"><span>Previous section</span></a>
+                <a href="#contents"><span>To top</span></a>
+                <a href="#thermal"><span>Next section</span></a>
+              </div>
+
+              <h2>Celestial motion</h2>
+
+              <!-- contents -->
+              <ul class="sectionContents">
+                <li><a href="#proper-motion">Proper motion</a></li>
+              </ul>
+
+              <p><b>
+                Everything in the night sky is in motion.
+                The most obvious is the apparent motion of the stars every night due to the rotation of the Earth - <span class="important">diurnal motion</span>. 
+                As well as this, as the Earth moves around the Sun we can detect the movement of nearby stars and use their parallax for distance measurements.
+                Accounting for the stars' apparent motions, they still have motion called space velocity.
+                A stars motion can be broken down into two components, its radial velocity and proper motion.
+                <span class="important">Radial velocity</span> is the motion of the star in our line of sight (i.e. towards or away from us).
+                <span class="important">Proper motion</span> is the motion of the star in the plane of the night sky.
+                In this section, we will look at how the motion of celestial objects is measured, and what we can learn from it.
+              </b></p>
+
+              <h4 id="proper-motion">Proper motion</h4>
+
+            </div> <!-- this is the celestial motion div -->
+            <br>
 
           </div> <!-- this is the main div!!! -->
           
