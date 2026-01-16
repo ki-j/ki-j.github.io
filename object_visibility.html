@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tools</title>
+        <link type="text/css" rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <main>
+          <!-- side bar -->
+          <script src="sidebar.js"></script>
+          
+          <!-- Page content -->
+          <div class="main">
+
+            <div class="back-image">
+              <div class="back-text">
+                <h1 style="font-size:50px; color: #fff8e7aa;">Object visibility</h1>
+              </div>
+            </div>
+            
+            
+            <h2>Calculate target altitudes for any night and observing location</h2>
+            <p>
+              Use this tool to calculate the altitudes of celestial objects for any night and observing location. 
+              Simply enter the date, time, and location details to see when your favorite objects will be visible in the night sky.
+            </p>
+            <p>Visit <a href="https://github.com/ki-j/star_visibility">my github page</a> for more information by clicking the button below.</p>
+
+            <h3>Usage</h3>
+            <ul style="margin-left: 5%;">
+              <li>Visit <a href="https://github.com/ki-j/star_visibility">my github page</a> and a copy of the repository by cloning it. </li>
+              <li>Open the 'input.py' file and enter the location, observing date, target list, and optionally the telescope name.</li>
+              <li>Run the 'object_visibility.py' script to generate the altitude plot (this will also be saved as a pdf into the main directory).</li>
+            </ul>
+
+            <h2>
+              <div class="navButtons" style="float: left;">
+                <a href="https://github.com/ki-j/star_visibility"><span>Object visibility calculator</span></a>
+              </div>
+            </h2>
+
+            <img src="object_visibility_2026-01-16_Vega_V1315_Aquilae_LAMOST_J035913.61+405035.0.png" alt="Example output plot showing object altitudes over the night." style="width:80%; max-width:800px; display:block; margin-left:auto; margin-right:auto;">
+
+        </main>
+
+        <footer>
+          <script src="footbar.js"></script>
+        </footer>
+    </body>
+</html>
