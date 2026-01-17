@@ -266,6 +266,7 @@ footer {
     justify-content: space-evenly;
     padding: 10px 10px;
     max-width: 90%;
+    max-height: max-content;
     margin-left: 5%;
   }
 
@@ -394,6 +395,15 @@ footer {
 /* BACKGROUND IMAGE - PROJECTS*/
 .back-image-proj {
     background: url(projects/proj-header.jpg) no-repeat center;
+    position: fixed;
+    opacity: 1.00; 
+    background-size: cover;
+    height: 250px;
+    position: relative;
+  }
+
+.back-image-aboras {
+    background: url(projects/ABORAS/ABORAS.png) no-repeat center;
     position: fixed;
     opacity: 1.00; 
     background-size: cover;
@@ -651,6 +661,7 @@ a:hover circle {
         background-image: linear-gradient(20deg, #000030 0%, #050540 70%, #3030aa 100%);
         /* background-image: url(projects/button-background.png); */
         border-style: groove;
+        width: 100%;
     }
 
         .projectButton:hover {
@@ -921,7 +932,26 @@ a:hover circle {
 }
 .frac span.symbol {
     display: none;
-} 
+}
+
+.ABORASbutton {
+    width: 90%;
+    border-radius: 10px;
+    filter: brightness(100%);
+    filter: contrast(1.0);
+    /* -webkit-filter: brightness(100%); */
+}
+    .ABORASbutton:hover {
+        box-shadow: 0px 0px 7px black;
+        filter: brightness(70%);
+        filter: contrast(1.25);
+        /* -webkit-filter: brightness(70%); */
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+}
 
 .navButtons {
     float: right;
@@ -1001,15 +1031,16 @@ details > summary {
 }
 
 .frontCards {
-    width: 23%; 
+    width: 30%; 
+    height: 320px;
     padding: 0px 0px; 
     border-style: solid; 
     border-color: black; 
     /* background-color: #e5e5e5;  */
     background-color: #14213d;
     border-radius: 20px; 
-    margin-left: 5%; 
-    margin-right: 5%; 
+    margin-left: 1%; 
+    margin-right: 1%; 
     font-size: small; 
     /* color: black;  */
     color: #ffffff;
