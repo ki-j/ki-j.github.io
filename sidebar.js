@@ -1,6 +1,6 @@
 let sidebarHTML = `
     <div class="sidenav">
-        <img src="https://ki-j.github.io/sex1.png" alt="Me during an observing night at the Observatorio de Roque de los Muchachos in La Palma." style="margin-left: 10%; width: 75%; justify-content: center;"><br>
+        <img src="https://ki-j.github.io/sex1.png" alt="Me during an observing night at the Observatorio de Roque de los Muchachos in La Palma." style="margin-left: 10%; width: 75%; justify-content: center;" class="img"><br>
         <br>
         <a href="https://ki-j.github.io/index.html">About</a>
         <a href="https://ki-j.github.io/projects.html">Projects</a>
