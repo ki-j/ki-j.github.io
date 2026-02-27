@@ -53,6 +53,20 @@ h3 {
 img {
     height: auto;
     max-width: 100%;
+    justify-content: right;
+}
+
+.container { /* to put images in next to text */
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  justify-content: center;
+  width: 90%;
+}
+
+.text { /* the text next to the image */
+  padding-right: 20px;
+  justify-content: left;
 }
 
 /* On smaller screens, where width is less than 500px, change the style of the sidebar (less padding and a smaller font size) */
