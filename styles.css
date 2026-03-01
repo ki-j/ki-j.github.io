@@ -49,6 +49,14 @@ h3 {
     text-align: left;
 }
 
+h4 {
+    font-family: "Lato", sans-serif;
+    color: #305080;
+    /* color: #204090; */
+    font-size: 12pt;
+    text-align: left;
+}
+
 /* IMAGES */
 img {
     height: auto;
@@ -263,6 +271,11 @@ footer {
     }
 
     .main h3 {
+        padding: 0 5%;
+        text-align: left;
+    }
+
+    .main h4 {
         padding: 0 5%;
         text-align: left;
     }
