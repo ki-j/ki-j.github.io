@@ -502,10 +502,10 @@ footer {
     background: url(projects/proj-header.jpg) no-repeat center;
     position: fixed;
     opacity: 1.00; 
-    /* background-size: cover; */
-    background-size: 100% auto;
-    /* height: 250px; */
-    width: 100%;
+    background-size: cover;
+    /* background-size: 100% auto; */
+    height: 250px;
+    /* width: 100%; */
     position: relative;
   }
 
