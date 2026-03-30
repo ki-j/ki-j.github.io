@@ -65,6 +65,7 @@ img {
 
 figure {
     width: 90%; 
+    margin-left: 5%;
     margin-top: 20px; 
     margin-bottom: 20px;
 }
@@ -237,7 +238,8 @@ footer {
         }
 
             .sidenav li a:hover {
-                color: #003022;
+                /* color: #003022; */
+                color: #b3d4c8;
             }
 
 /* navigation menu links */
@@ -251,7 +253,8 @@ footer {
 
         /* When you mouse over the navigation links, change their color */
         .sidenav a:hover {
-            color: #003022;
+            /* color: #003022; */
+            color: #b3d4c8;
         }
   
   /* Style page content */
@@ -292,7 +295,8 @@ footer {
             }
 
                 .main nav li a:hover {
-                    color: #003022;
+                    /* color: #003022; */
+                    color: #b3d4c8;
                 }
     .main .cardContainer {
         padding: 10px 10px;
@@ -1097,21 +1101,45 @@ a:hover circle {
 
 
 /* toggles */
+details {
+    margin-left: 5%;
+    width: 90%;
+}
+
 details > summary {
+    color: #001020;
+    font-weight: bold;
     width: fit-content;
     padding: 10px 10px;
-    background-color: #ffffffaa;
+    /* margin-left: 5%; */
+    background-color: #00102020;
     box-shadow: 4px 4px 4px #00000050;
     border: none;
     cursor: none;
   }
   
   details > p {
-    background-color: #eeeeee;
+    /* background-color: #eeeeee; */
+    background-color: #fff8e7;
+    color: #001020aa;
+    font-style: italic;
     padding: 4px;
-    margin: 0;
-    box-shadow: 1px 1px 2px #bbbbbb;
+    /* margin-left: 2%; */
+    box-shadow: 2px 2px 4px #bbbbbb;
   }
+    .extraDetails { /* the little extra bits */
+        margin-left: 7%;
+        width: 86%;
+    }
+    .extraDetailsSummary {
+        border-radius: 10px;
+        background-color: #fff8e7;
+    }
+    .extraDetailsP {
+        border-radius: 10px;
+    }
+
+
 
 .placeLink {
     font-size: small; 
