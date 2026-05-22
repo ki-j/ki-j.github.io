@@ -536,6 +536,18 @@ footer {
     position: relative;
   }
 
+  .back-image-tng {
+    background: url(materials/observing/TNG_HARPN_observing/TNG_header2.jpg) no-repeat center;
+    position: fixed;
+    opacity: 1.00; 
+    background-size: cover;
+    /* background-size: 100% auto; */
+    height: 250px;
+    /* height: fit-content; */
+    /* width: 100%; */
+    position: relative;
+  }
+
 /* EMBEDDED PDFS */
 .pdf {
     justify-content: center;
@@ -1214,3 +1226,161 @@ details > summary {
         margin-top: 10px;
     }
   }
+
+.HARPSbox {
+    color: black;
+    background-color: #EDF6FD;
+    border-radius: 10px;
+    border: solid #0A3A5C;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: small;
+}
+    .HARPSbox h3 {
+        color: #041825;
+    }
+    .HARPSbox h4 {
+        color: #062337;
+    }
+    .HARPSbox h5 {
+        color: #082F49;
+    }
+    .HARPSbox ol {
+        margin-left: 5%;
+    }
+    .HARPSbox ul {
+        margin-left: 5%;
+    }
+    .HARPSbox i {
+        color: #B27C66;
+    }
+    .HARPSbox b {
+        color: #606C38;
+    }
+    .HARPSbox TT {
+        color: #606C38;
+        font-weight: bold;
+    }
+    .HARPSbox-section {
+        color: black;
+        /* background-color: #0A3A5C20;
+        border-radius: 10px;
+        border: solid #0A3A5C;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5px;
+        margin-bottom: 5px; */
+    }
+.HARPSbutton {
+    border: solid #0A3A5C; 
+    border-radius: 10px; 
+    background-color: #EDF6FD; 
+    float:left; 
+    display:inline; 
+    width: 15%; 
+    height: 50px; 
+    margin-left: 34%; 
+    padding: 10px 10px; 
+    font-weight: bold;
+}
+    .HARPSbutton:hover {
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    transition: all 0.1s ease-out;
+    background-color: #C8E4F9;
+}
+
+.GIANObox {
+    background-color: #EFE7EF;
+    border-radius: 10px;
+    border: solid #624162;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: small;
+}
+    .GIANObox h3 {
+        color: #251825;
+    }
+    .GIANObox h4 {
+        color: #312031;
+    }
+    .GIANObox h5 {
+        color: #3E283E;
+    }
+    .GIANObox ol {
+        margin-left: 5%;
+    }
+    .GIANObox ul {
+        margin-left: 5%;
+    }
+    .GIANObox i {
+        color: #471F3F;
+    }
+    .GIANObox b {
+        color: #C44536;
+    }
+    .GIANObox TT {
+        color: #895B1E;
+        font-weight: bold;
+    }
+    .GIANObox-section {
+        color:#000;
+        /* background-color: #30000020;
+        border-radius: 10px;
+        border: solid #702020;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5px;
+        margin-bottom: 5px; */
+    }
+.GIANObutton {
+    border: solid #624162; 
+    border-radius: 10px; 
+    background-color: #EFE7EF; 
+    float:right; 
+    display:inline; 
+    width: 15%; 
+    height: 50px;
+    margin-right: 34%; 
+    padding: 10px 10px; 
+    font-weight: bold;
+}
+    .GIANObutton:hover {
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    transition: all 0.1s ease-out;
+    background-color: #DFCDDF;
+}
+
+.warn {
+    background-color: #d1b500;
+    border-radius: 10px;
+    border: solid #000000;
+    border-width: 0.1cap;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px 7px;
+}
+
+.note {
+    color:#000000aa;
+    background-color: #fffce6bb;
+    border-radius: 10px;
+    border: solid #000000;
+    border-width: 0.1cap;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px 7px;
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Observing with HARPS-N (TNG)</title>
+        <link type="text/css" rel="stylesheet" href="../../styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <main>
+          <!-- side bar -->
+          <script src="../../sidebar.js"></script>
+          
+          <!-- Page content -->
+          <div class="main">
+            <div class="back-image-tng">
+              <div class="back-text">
+                <h1 style="font-size:50px; color: #fff8e7aa;" id="top">Observing with HARPS-N on the TNG</h1>
+              </div>
+            </div>
+
+            <h2>TNG observing instructions for HARPS & GIARPS</h2>
+
+            <div class="navButtons" style="margin-right: 5%;">
+                <a href="#setup"><span>Setup</span></a>
+                <a href="#calibrations"><span>Calibrations</span></a>
+                <a href="#observing"><span>Observing</span></a>
+            </div>
+
+            <h3>Control room layout</h3>
+            <hr style="border-top: 3px double; padding: 5px 5px; width: 90%; margin-left: 5%;">
+            <p>
+                The control room has a basic setup, the astronomer uses three monitors for their work. 
+                As you walk in through the door, on your right are the <b>TO's monitors</b>, which are a 3x2 grid of monitors - <i>no touchy</i>. 
+                Then, along the desk from that are the <b>astronomer monitors</b>, these consist of a wide curved screen (DRS computer, brunello), then two smaller screens to its left (camera on left & weather on right).
+            </p>
+            <figure>
+                <img src="TNG_HARPN_observing/TNG_controlRoom.jpg" style="width: 90%; border-radius: 30px; padding: 10px 10px; margin-left: 5%;">
+                <figcaption style="text-align: center;">The TNG control room - ft. Billy the Bison. On the right is the TOs workspace, to the left is brunello, and on the far right is wsastro.</figcaption>
+            </figure>
+
+            <!-- SETUP -->
+
+            <div class="navButtons" style="margin-right: 5%;">
+                <a href="#setup"><span>Setup</span></a>
+                <a href="#calibrations"><span>Calibrations</span></a>
+                <a href="#observing"><span>Observing</span></a>
+            </div>
+
+            <h3 id="setup">Setup</h3>
+            <hr style="border-top: 3px double; padding: 5px 5px; width: 90%; margin-left: 5%;">
+            
+            <div class="HARPSbox">
+                <h3>HARPS-N</h3>
+                <hr style="width: 80; margin-left: 5%; margin-right: 5%;">
+                <p>First, open the sequencer and scheduler on brunello.</p>
+                <div class="HARPSbox-section">
+                    <h4>On brunello (DRS computer)</h4>
+                        <p>The applications for harps can be found by clicking on the "applications" tab at the top then "HARPS".</p>
+                        <ol>
+                            <li>Launch the <i>sequencer</i></li>
+
+                            <li>Launch the <i>scheduler (NSTS)</i></li>
+                            <ul>
+                                <li>Choose <b>"HARPS"</b> & <b>"online"</b></li>
+                                <li>If online is working, the scheduler and sequencer will communicate</li>
+                            </ul>
+                        </ol>
+                    <figure>
+                        <img src="TNG_HARPN_observing/TNG_brunello.jpg" style="width: 90%; border-radius: 30px; padding: 10px 10px; margin-left: 5%;">
+                        <figcaption style="text-align: center;">The TNG brunello desktop - ft. Billy the Bison. This contains the sequencer, scheduler, and DRS for HARPS-N & GIANO.</figcaption>
+                    </figure>
+                </div>
+
+                <p>Next, set up the camera (UCAM).</p>
+                <div class="HARPSbox-section">
+                    <h4>On the camera monitor</h4>
+                        <p>
+                            Launch UCAM by clicking the icon on the desktop<br>
+                            In the GUI:
+                        </p>
+                        <ol>
+                            <li>Click <i>reset</i></li>
+                                <ul><li>Accept any pop-up messages by clicking <i>ok</i></li></ul>
+                            <li>Click <i>initialise</i></li>
+                            <li>Click <i>enable</i></li>
+                            <li>Click <i>refresh</i></li>
+                                <ul><li>Some channels will come up in "Camera Applications"</li></ul>
+                            <li>Choose <b>ccd231_read_2ch_app.xml</b></li>
+                            <li>Click <i>select</i></li>
+                                <ul>Check correct values in the Application Parameters window</ul>
+                            <li>Click <i>execute</i></li>
+                        </ol>
+                        <p class="warn">Remember to turn UCAM off at the end of the night!</p>
+                </div>
+
+                <p>Then, launch the DRS.</p>
+                <div class="HARPSbox-section">
+                    <h4>Run DRS</h4>
+                    <p>Open the DRS in <TT>Applications --> HARPS-START-DRS 3.2.0</TT></p>
+                    <p class="note">Note: If the browser closes but the terminal remains open, you can click <TT>HARPS-START DRS Browser</TT></p>
+                </div>
+
+                <p>Now, with permission from the TO, we can begin turning things on.</p>
+                <div class="HARPSbox-section">
+                    <h4>Start sequencer</h4>
+                    <ol>
+                        <li>Click <i>LCU init</i></li>
+                        <ul>
+                            <li>Check that the light next to <b>LCU init</b> is <span style="color:green; font-weight: bold;">green</span></li>
+                            <li>Verify that there are no errors reported in the sequencer</li>
+                        </ul>
+                        <li>Ask the TO if you can start the telescope</li>
+                        <li>Click <i>start tel</i></li>
+                    </ol>
+                    <figure>
+                        <img src="TNG_HARPN_observing/TNG_sequencer.jpg" style="width: 50%; border-radius: 30px; padding: 10px 10px; margin-left: 25%;">
+                        <figcaption style="text-align: center;">The TNG sequencer.</figcaption>
+                    </figure>
+                </div>
+                
+                <p style="text-align: center;"><b>Congratulations! You are now ready to calibrate!</b></p>
+
+                <br>
+                <div style="text-align: center;">
+                    <a href="#HARPS_calib" style="color: black"><div class="HARPSbutton">Calibrate HARPS</div></a>
+                    <a href="#GIANO_setup" style="color: black"><div class="GIANObutton">Setup GIANO</div></a>
+                </div>
+                <br><br><br><br>
+
+            </div>
+
+            <div class="GIANObox" id="GIANO_setup">
+                <h3>GIARPS</h3>
+                <hr style="width: 80; margin-left: 5%; margin-right: 5%;">
+                <p class="note">If using GIANO in GIARPS mode, setup GIANO in a different desktop to HARPS to avoid confusion.</p>
+
+                <div class="GIANObox-section">
+                    <h4>On brunello (DRS computer)</h4>
+                    <p>You will open up GIANO exactly the same was as HARPS-N. GIANO has the tabs ordered already.</p>
+                    <ol>
+                        <li>Open the <i>sequencer</i>: <TT>Applications --> GIANO-B --> 1 GIANO-B Sequencer</TT></li>
+                        <li>Open the <i>scheduler (NSTS)</i>: <TT>Applications --> GIANO-B --> 2 GIANO-B NSTS</TT></li>
+                    </ol>
+                </div>
+
+                <div class="GIANObox-section">
+                    <h4>In the sequencer</h4>
+                    <ol>
+                        <li>Click <i>start detector</i></li>
+                        <li>Make sure that everything in the upper right (instrument & detector) are <span style="color: green; font-weight: bold;">green</span></li>
+                        <li>Make sure the lower right (lamps) are <span style="color: red; font-weight: bold;">red</span></li>
+                        <li>Click <i>set GIARPS</i></li>
+                    </ol>
+                    <p class="warn">Don't execure <i>set GIANO</i> and <i>start tel</i> at the same time!</p>
+                </div>
+
+                <div class="GIANObox-section">
+                    <h4>DRS</h4>
+                    <p>You can open this in the browser, it just sits there working</p>
+                    <ol>
+                        <li>Open the DRS: <TT>Applications --> GIANO-B --> 3 GIANO-B Online DRS</TT></li>
+                            <ul>
+                                <li>Note that it may stall when processing the S1Ds, you can just click <i>stop</i> and then <i>start</i> again</li>
+                                <li>The S1D DRS is independent of observations and will not affect them</li>
+                            </ul>
+                    </ol>
+                </div>
+
+                <div class="GIANObox-section">
+                    <h4>Slit calibration</h4>
+                    <p>Open the slit calibrations tab: <TT>Applications --> GIANO-B --> 4 GIANO-B Slit Calibration</TT></p>
+                </div>
+
+                <p style="text-align: center;"><b>Congratulations! You are now ready to calibrate!</b></p>
+
+                <br>
+                <div style="text-align: center;">
+                    <a href="#HARPS_calib" style="color: black"><div class="HARPSbutton">Calibrate HARPS</div></a>
+                    <a href="#GIANO_calib" style="color: black"><div class="GIANObutton">Calibrate GIANO</div></a>
+                </div>
+                <br><br><br><br>
+
+            </div>
+
+            <!-- CALIBRATIONS -->
+
+            <div class="navButtons" style="margin-right: 5%;">
+                <a href="#setup"><span>Setup</span></a>
+                <a href="#calibrations"><span>Calibrations</span></a>
+                <a href="#observing"><span>Observing</span></a>
+            </div>
+
+            <h3 id="calibrations">Calibrations</h3>
+            <hr style="border-top: 3px double; padding: 5px 5px; width: 90%; margin-left: 5%;">
+
+            <div class="HARPSbox" id="HARPS_calib">
+                <h3>HARPS-N</h3>
+                <hr style="width: 80; margin-left: 5%; margin-right: 5%;">
+                <p class="note">First, tell the TO that you are ready to calibrate!</p>
+
+                <h4>Load calibrations</h4>
+                <p>In the <i>scheduler (NSTS)</i>, load the calibrations</p>
+                <ul>
+                    <li><TT>file --> insert OB --> OB_Standard_Calibration</TT></li>
+                    <li>Make sure the dust cover is <b>closed</b></li>
+                </ul>
+
+                <h4>Run calibrations</h4>
+                <ol>
+                    <li>Turn on the Th-Ar lamps <b>manually</b> (THAR1)</li>
+                        <ul>
+                            <li>Check the light is <span style="color:green; font-weight: bold;">green</span> and <i>"on"</i> is displayed</li>
+                            <li>Wait a couple minutes for the lamp to warm up</li>
+                        </ul>
+                    <li>Click <i>next OB</i></li>
+                    <li>Check <b>quality control</b> on DRS</li>
+                    <li><b>Turn of THAR1!</b></li>
+                </ol>
+                <p style="text-align: center;"><b>Congratulations! You are now ready to observe!</b></p>
+
+                <br>
+                <div style="text-align: center;">
+                    <a href="#HARPS_obs" style="color: black"><div class="HARPSbutton">Observe with HARPS</div></a>
+                    <a href="#GIANO_calib" style="color: black"><div class="GIANObutton">Calibrate GIANO</div></a>
+                </div>
+                <br><br><br><br>
+
+            </div>
+
+            <div class="GIANObox" id="GIANO_calib">
+                <h3>GIARPS</h3>
+                <hr style="width: 80; margin-left: 5%; margin-right: 5%;">
+
+                <p class="note">Note: <b>HARPS & GIANO calibrations can be done at the same time</b></p>
+                <p class="note">Note: <b>During calibrations, <i>set GIARPS</i> may turn red, this is fine</b></p>
+
+                <h4>Afternoon calibrations</h4>
+                <p>Load in calibrations:</p>
+                <ol>
+                    <li>In NSTS, load darks with <TT>insert OB --> OB_Cal_Dark</TT></li>
+                    <li>In NSTS, load flats with <TT>insert OB --> OB_Cal_Flat</TT></li>
+                </ol>
+
+                <p>To be carried out when transit observations are scheduled:</p>
+                <ol>
+                    <li><i>7 dark frames</i> to be acquired</li>
+                        <ul style="list-style: none;">
+                            <li><h5>For nodding AB observations</h5></li>
+                            <ul>
+                                <li>7 darks with exposure times of 100s</li>
+                                <li>The standard Dark OB in NSTS can be used as is</li>
+                                <li>Click <i>next OB</i> to run</li>
+                                <li>Click <i>start</i> in the DRS S1D bit</li>
+                            </ul>
+                            <li><h5>For stare observations</h5></li>
+                            <ul>
+                                <li>7 darks with exposure times equal to that of the science observations</li>
+                                <li>The exposure time in the standard Dark OB must be changed in NSTS</li>
+                                <li>Click <i>next OB</i> to run</li>
+                                <li>Click <i>start</i> in the DRS S1D bit</li>
+                            </ul>
+                        </ul>
+                    <li><i>7 flat frames</i> with an exposure time of 100s</li>
+                        <ul>
+                            <li>Acquired with the Flat OB in NSTS</li>
+                            <li>Click <i>next OB</i> to run</li>
+                        </ul>
+                    <li><i>Slit calibration</i> using the web interface</li>
+                        <ul>
+                            <li>Make sure observations/calibrations have finished and telescope is stopped</li>
+                            <li>Click <i>start</i> on the interface, it is all automatic</li>
+                            <li>When it has finished, read out the slit positions to the TO</li>
+                                <ul><li><span style="color:green">Position A/B/C (Result)</span></li></ul>
+                        </ul>
+                    <li>After running these calibrations, load in the target OB and UNe calibration OB to NSTS</li>
+                </ol>
+
+                <h4>Night-time calibrations</h4>
+                <ol>
+                    <li>Perform the <i>slit calibration</i> before the start of transit observations (leave <b>significant</b> time - 15 to 20 mins)</li>
+                        <ul><li>Again, just click <i>start</i> in the tab on the browser</li></ul>
+                    <li>Perform <i>U-Ne calibration</i> at the end of the GIANO-B observations</li>
+                        <ul>
+                            <li>Make sure observations are finished and the telescope is stopped</li>
+                            <li>Insert the observations in the NSTS <TT>insert OB --> OB_Cal_UNe</TT></li>
+                            <li>Click <i>next OB</i></li>
+                            <li>Note: <b>No more GIANO-B observations can be carried out after this exposure</b></li>
+                        </ul>
+                </ol>
+
+                <p style="text-align: center;"><b>Congratulations! You are now ready to observe!</b></p>
+
+                <br>
+                <div style="text-align: center;">
+                    <a href="#HARPS_obs" style="color: black"><div class="HARPSbutton">Observe with HARPS</div></a>
+                    <a href="#GIANO_obs" style="color: black"><div class="GIANObutton">Observe with GIARPS</div></a>
+                </div>
+                <br><br><br><br>
+                
+            </div>
+
+            <!-- OBSERVING -->
+
+            <div class="navButtons" style="margin-right: 5%;">
+                <a href="#setup"><span>Setup</span></a>
+                <a href="#calibrations"><span>Calibrations</span></a>
+                <a href="#observing"><span>Observing</span></a>
+            </div>
+
+            <h3 id="observing">Observing</h3>
+            <hr style="border-top: 3px double; padding: 5px 5px; width: 90%; margin-left: 5%;">
+
+            <div class="HARPSbox" id="HARPS_obs">
+                <h3>HARPS-N</h3>
+                <hr style="width: 80; margin-left: 5%; margin-right: 5%;">
+                <div class="HARPSbox-section">
+                    <h4>Focus run</h4>
+                    <p>In the scheduler (NSTS)...</p>
+                    <ol>
+                        <li>Select a bright star and change the <i>_ech_obs_all</i> exposure to <i>HARPN_focus</i> by going to <b><TT>file --> insert TPL</TT></b></li>
+                        <li>Change the  <i>_ech_acq__wavesimult</i> to <i>_ech_acq_objAB</i> with the same method</li>
+                    </ol>
+
+                    <p>In the sequencer...</p>
+                    <ol>
+                        <li>Click <i>next OB</i> to slew to the focus star</li>
+                        <li>Wait for the image to pop-up on <b>DS9</b> and click on the target so that the green crosshairs are roughly centred on it</li>
+                        <li>Click <i>go</i></li>
+                        <li>Check the FWHM once the exposure is completed, and check the focus with the TO</li>
+                        <li>If all is well, click <i>save focus</i></li>
+                    </ol>
+                </div>
+
+                <p style="text-align: center;"><b>Congratulations! You are ready to science!</b></p>
+
+                <div class="HARPSbox-section">
+                    <h4>Science</h4>
+                    <ol>
+                        <li>Click <i>next OB</i> and wait for target to pop up on DS9</li>
+                        <li>Click on the star in DS9</li>
+                            <ul><li>Note: <b>If the star is far the centre of the crosshairs, re-expose (click <i>expose</i>) and check again. The star is likely to fall in the bottom left quadrant of the crosshairs</b></li></ul>
+                        <li>Click <i>go</i> in the sequencer</li>
+                    </ol>
+                </div>
+
+                <br>
+                <div style="text-align: center;">
+                    <a href="#GIANO_obs" style="color: black"><div class="GIANObutton" style="margin-right: 45%;">Observe with GIARPS</div></a>
+                </div>
+                <br><br><br><br>
+
+            </div>
+
+            <div class="GIANObox" id="GIANO_obs">
+                <h3>GIARPS transit observations</h3>
+                <hr style="width: 80; margin-left: 5%; margin-right: 5%;">
+
+                <h4>Preparing observations</h4>
+                <ol>
+                    <li>In the afternoon, ensure corresponding target OB is loaded into GIANO-B & HARPS NSTS</li>
+                    <li>Set NPAIRS and NEXP in the NSTS to a large number</li>
+                    <li><i>Finish any preceding observations at least 10 minutes before the transit (preferably 15 minutes before)</i></li>
+                </ol>
+
+                <h4>GIARPS mode transit observations</h4>
+                <ol>
+                    <li>Click <i>next OB</i> on the HARPS-N NSTS</li>
+                    <li>Click on the star in DS9 to centre the pointing</li>
+                    <li>Open a new slit window (<TT>Applications --> etc...</TT>) and perform the <i>slit calibration</i></li>
+                    <li>Click <i>next OB</i> in the GIANO-B NSTS</li>
+                    <li>Check with the TO that the star is roughly in the centre of the FoV in DS9</li>
+                        <ul><li>Also check focusing & suitable autoguider exposure time</li></ul>
+                    <li>Click <i>repoint</i> in the HARPS-N sequencer to recentre the target in DS9</li>
+                    <li>Start the HARPS-N observations (click <i>go</i>)</li>
+                    <li>Start the GIANO observations (click <i>go</i>)</li>
+                    <li><b>Keep an eye on the progress of exposure frames in the sequencer, and the appearance of the 2D spectra in DS9</b></li>
+                    <li><b>Keep an eye on the S/N evolution in the Online DRS</b></li>
+                        <ul><li>Note: <b>If the S1D processing crashes, you can just stop and then restart them</b></li></ul>
+                    <li>At the observation end time, click <i>abort</i> on the GIANO-B & HARPS-N sequencers</li>
+                </ol>
+
+                <p class="note">Make sure calibration lamps are <i>off</i> during observations!</p>
+                <p class="note">Don't forget to run your U-Ne calibrations after GIANO-B observations!</p>
+            </div>
+
+          </div>
+        </main>
+
+        <footer>
+          <script src="../../footer.js"></script>
+        </footer>
+    </body>
+</html>
