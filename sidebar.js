@@ -5,7 +5,8 @@ let sidebarHTML = `
         <a href="https://ki-j.github.io/index.html">About</a>
         <a href="https://ki-j.github.io/projects.html">Projects</a>
         <a href="https://ki-j.github.io/employment.html">Employment</a>
-        <a href="https://ki-j.github.io/observing.html">Observing</a>      
+        <a href="https://ki-j.github.io/observing.html">Observing</a>   
+        <a href="https://ki-j.github.io/links.html">All pages</a>   
         <!-- <a href="cv.html">CV</a> -->
         <!-- <a href="https://ki-j.github.io/materials.html">Materials</a> -->
         <br>

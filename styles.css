@@ -72,6 +72,7 @@ figure {
 
 figcaption {
     font-size: small;
+    color: #707070;
 }
 
 .container { /* to put images in next to text */
@@ -1150,7 +1151,19 @@ details > summary {
     .extraDetailsP {
         border-radius: 10px;
     }
-
+    .linkDetails { /* for the page with all the links on */
+        background-color: #ffffff;
+        box-shadow: 0;
+        margin-left: 0;
+    }
+    .linkDetailsSummary {
+        background-color: #ffffff;
+        box-shadow: none;
+        margin-left: 0;
+    }
+        .linkDetailsSummary:hover {
+            color: #006080;
+        }
 
 
 .placeLink {
@@ -1384,3 +1397,15 @@ details > summary {
     font-weight: bold;
     padding: 7px 7px;
 }
+
+.linkpageBullets {
+    margin-left: 5%;
+}
+    .linkpageBullets li a {
+        text-decoration: none;
+        color: #006080;
+    }
+    .linkpageBullets li a:hover {
+        text-decoration: none;
+        color: #0050ff;
+    }
