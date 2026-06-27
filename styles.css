@@ -57,6 +57,14 @@ h4 {
     text-align: left;
 }
 
+h5 {
+    font-family: "Lato", sans-serif;
+    color: #152540;
+    /* color: #204090; */
+    font-size: 11pt;
+    text-align: left;
+}
+
 /* IMAGES */
 img {
     height: auto;
@@ -280,6 +288,10 @@ footer {
     }
 
     .main h4 {
+        padding: 0 5%;
+        text-align: left;
+    }
+    .main h5 {
         padding: 0 5%;
         text-align: left;
     }
