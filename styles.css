@@ -798,14 +798,22 @@ a:hover circle {
     }
 
     .projectButton {
-        background-image: linear-gradient(20deg, #000030 0%, #050540 70%, #3030aa 100%);
+        /* background-image: linear-gradient(20deg, #000030 0%, #050540 70%, #3030aa 100%); */
         /* background-image: url(projects/button-background.png); */
+        background-color: #00006060;
         border-style: groove;
         width: 100%;
+        font-size: small;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
 
         .projectButton:hover {
             /* background-image: linear-gradient(20deg, #05050550 20%, #20202050 60%, #70707050 100%); */
+            background-color: #00004080;
             box-shadow: 4px 4px 4px #00000050;
         }
     .acCVButton {
