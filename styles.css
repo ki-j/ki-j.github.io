@@ -77,6 +77,15 @@ figure {
     margin-top: 20px; 
     margin-bottom: 20px;
 }
+.ABORASsmallfig {
+    width: 40%;
+}
+
+@media screen and (max-width: 500px) {
+    .ABORASsmallfig {
+        width: 90%;
+    }
+  }
 
 figcaption {
     font-size: small;
