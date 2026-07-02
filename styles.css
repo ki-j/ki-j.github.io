@@ -77,13 +77,32 @@ figure {
     margin-top: 20px; 
     margin-bottom: 20px;
 }
-.ABORASsmallfig {
-    width: 40%;
+
+@media screen and (min-width: 750px) {
+    .ABORASsmallfig {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     .ABORASsmallfig {
         width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ABORASsmallfig img {
+        width: 100%;
+        height: auto;
+    }
+    .ABORASsmallfig figcaption {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
   }
 
@@ -577,6 +596,14 @@ footer {
     height: 1000px; 
     margin-left: 5%;
 }
+
+@media screen and (max-width: 750px) {
+    .pdf {
+        width: 90%; 
+        height: 400px; 
+        margin-left: 5%;
+    }
+  }
 
 /* THE PLANETS */
 /* individual pages */
