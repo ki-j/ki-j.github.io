@@ -223,6 +223,7 @@ footer {
     footer nav ul {
         margin-left: 15%;
         /* background-color: #000000dd; */
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(https://apod.nasa.gov/apod/image/2505/BeneathJupiter_Juno_960.jpg) center;
         background-color: #202020;
         padding: 0.5em;
         border-radius: 0px;
