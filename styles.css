@@ -65,6 +65,14 @@ h5 {
     text-align: left;
 }
 
+h6 {
+    font-family: "Lato", sans-serif;
+    color: #152540;
+    /* color: #204090; */
+    font-size: 9.5pt;
+    text-align: left;
+}
+
 /* IMAGES */
 img {
     height: auto;
@@ -76,6 +84,10 @@ figure {
     margin-left: 5%;
     margin-top: 20px; 
     margin-bottom: 20px;
+}
+
+p ol {
+    margin-left: 5%;
 }
 
 @media screen and (min-width: 750px) {
@@ -320,6 +332,10 @@ footer {
         text-align: left;
     }
     .main h5 {
+        padding: 0 5%;
+        text-align: left;
+    }
+    .main h6 {
         padding: 0 5%;
         text-align: left;
     }
@@ -579,6 +595,18 @@ footer {
 
   .back-image-tng {
     background: url(materials/observing/TNG_HARPN_observing/TNG_header2.jpg) no-repeat center;
+    position: fixed;
+    opacity: 1.00; 
+    background-size: cover;
+    /* background-size: 100% auto; */
+    height: 250px;
+    /* height: fit-content; */
+    /* width: 100%; */
+    position: relative;
+  }
+
+    .back-image-ing {
+    background: url(projects/ABORAS/INT_roof.jpg) no-repeat center;
     position: fixed;
     opacity: 1.00; 
     background-size: cover;
@@ -1424,6 +1452,212 @@ details > summary {
     transition: all 0.1s ease-out;
     background-color: #DFCDDF;
 }
+
+.IDSbox {
+    color: black;
+    background-color: #D7F1FF;
+    border-radius: 10px;
+    border: solid #01283D;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: small;
+}
+    .IDSbox h3 {
+        color: #01283D;
+    }
+    .IDSbox h4 {
+        color: #013551;
+    }
+    .IDSbox h5 {
+        color: #014265;
+    }
+    .IDSbox ol {
+        margin-left: 5%;
+    }
+    .IDSbox ul {
+        margin-left: 5%;
+    }
+    .IDSbox i {
+        color: #030264;
+    }
+    .IDSbox b {
+        color: #656501;
+    }
+    .IDSbox TT {
+        color: #000000;
+        font-weight: bold;
+    }
+    .IDSbox ul li a {
+        text-decoration: none;
+        color: #01283D;
+        font-weight: bold;
+    }
+        .IDSbox ul li a:hover {
+            color: black;
+        }
+    .IDSbox-section {
+        color: black;
+        background-color: #04A7FC30;
+        border-radius: 10px;
+        /* border: solid #0A3A5C; */
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .IDSbutton {
+    border: solid #01283D; 
+    border-radius: 10px; 
+    background-color: #04A7FC; 
+    float:left; 
+    display:inline; 
+    width: 15%; 
+    height: 50px; 
+    margin-left: 34%; 
+    padding: 10px 10px; 
+    font-weight: bold;
+}
+    .IDSbutton:hover {
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    transition: all 0.1s ease-out;
+    background-color: #C8E4F9;
+}
+
+.WFCbox {
+    background-color: #FFFFC2;
+    border-radius: 10px;
+    border: solid #3D3D00;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: small;
+}
+    .WFCbox h3 {
+        color: #3D3D00;
+    }
+    .WFCbox h4 {
+        color: #515100;
+    }
+    .WFCbox h5 {
+        color: #656501;
+    }
+    .WFCbox ol {
+        margin-left: 5%;
+    }
+    .WFCbox ul {
+        margin-left: 5%;
+    }
+    .WFCbox i {
+        color: #502419;
+    }
+    .WFCbox b {
+        color: #04029B;
+    }
+    .WFCbox TT {
+        color: #000000;
+        font-weight: bold;
+    }
+    .WFCbox ul li a {
+        text-decoration: none;
+        color: #3D3D00;
+        font-weight: bold;
+    }
+        .WFCbox ul li a:hover {
+            color: black;
+        }
+    .WFCbox-section {
+        color: black;
+        background-color: #FCFE0430;
+        border-radius: 10px;
+        /* border: solid #0A3A5C; */
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+.WFCbutton {
+    border: solid #3D3D00; 
+    border-radius: 10px; 
+    background-color: #FCFE04; 
+    float:right; 
+    display:inline; 
+    width: 15%; 
+    height: 50px;
+    margin-right: 34%; 
+    padding: 10px 10px; 
+    font-weight: bold;
+}
+    .WFCbutton:hover {
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    transition: all 0.1s ease-out;
+    background-color: #DFCDDF;
+}
+
+.SAbox {
+    color: black;
+    background-color: #eefded;
+    border-radius: 10px;
+    border: solid #0a5c10;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: small;
+}
+    .SAbox h3 {
+        color: #042506;
+    }
+    .SAbox h4 {
+        color: #073706;
+    }
+    .SAbox h5 {
+        color: #124908;
+    }
+    .SAbox ol {
+        margin-left: 5%;
+    }
+    .SAbox ul {
+        margin-left: 5%;
+    }
+    .SAbox i {
+        color: #B27C66;
+    }
+    .SAbox b {
+        color: #62386c;
+    }
+    .SAbox TT {
+        color: #6c3838;
+        font-weight: bold;
+    }
+    .SAbox ul li a {
+        text-decoration: none;
+        color: #0a5c10;
+        font-weight: bold;
+    }
+        .SAbox ul li a:hover {
+            color: black;
+        }
+    .SAbox-section {
+        color: black;
+        background-color: #0D490810;
+        border-radius: 10px;
+        /* border: solid #0A3A5C; */
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
 .warn {
     background-color: #d1b500;
