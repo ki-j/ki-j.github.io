@@ -256,6 +256,8 @@ footer {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     /* background-color: #000000dd; */
+    /* background: url(https://apod.nasa.gov/apod/image/2505/BeneathJupiter_Juno_960.jpg) center; */
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(https://apod.nasa.gov/apod/image/2505/BeneathJupiter_Juno_960.jpg) center;
     background-color: #202020;
     /* background-color: #22223b; */
     overflow-x: hidden; /* Disable horizontal scroll */
