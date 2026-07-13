@@ -159,11 +159,11 @@ figcaption {
     h3 {font-size: 11pt;}
 }
 
-p a {
+a {
    color: #ae2bae; 
    text-decoration: none;   
 }
-    p a:hover {
+    a:hover {
         color: #002040;
         text-decoration: none;
     }
