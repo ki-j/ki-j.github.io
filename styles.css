@@ -241,6 +241,14 @@ footer {
             text-align:center;
         }
 
+        footer nav ul li a {
+            text-decoration: none;
+            font-size: 10px;
+            color: #fff8e7;
+        }
+            footer nav ul li a:hover {
+                color: #b3d4c8;
+            }
         /* On smaller screens, where width is less than 500px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-width: 500px) {
     footer {margin-left: 10%;}
